@@ -14,11 +14,15 @@ public class InteractableItem : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) {
 
+        print("부딪힌 오브젝트의 이름은" + other.gameObject.tag);
+
         if(other.gameObject.CompareTag("PlayerTag")){
 
             Transform parent = gameObject.transform.parent;
+            print("parent의 이름은" + parent);
 
             if (parent != null) {
+                print("parent는 null이 아니다!");
                 foreach (Transform child in parent) {
                     if (child.CompareTag("Selected")) {
 
@@ -31,6 +35,7 @@ public class InteractableItem : MonoBehaviour
         }
 
         print("태그는" + gameObject.tag);
+        
 
         if(gameObject.CompareTag("Trash")){
             ui.Btn_Funding.SetActive(true);
