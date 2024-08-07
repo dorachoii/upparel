@@ -370,6 +370,7 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/VirtualButtonsScripts.ref.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.38f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.38f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Bought/03_Toxic/Scripts/Floating.cs"
@@ -433,12 +434,6 @@
 "Assets/_Dorami/05.Assets/Supercyan Character Pack Animal People Sample/Scripts/DemoFree.cs"
 "Assets/_Dorami/05.Assets/Supercyan Character Pack Animal People Sample/Scripts/FreeCameraLogic.cs"
 "Assets/_Dorami/05.Assets/Supercyan Character Pack Animal People Sample/Scripts/SimpleSampleCharacterControl.cs"
-"Assets/_Dorami/05.Assets/VirtualButtonsForUnity/VirtualButtonsForUnity/Examples/Scripts/PlayerActionsExample.cs"
-"Assets/_Dorami/05.Assets/VirtualButtonsForUnity/VirtualButtonsForUnity/Examples/Scripts/PlayerControllerExample.cs"
-"Assets/_Dorami/05.Assets/VirtualButtonsForUnity/VirtualButtonsForUnity/Scripts/VirtualButton.cs"
-"Assets/_Dorami/05.Assets/VirtualButtonsForUnity/VirtualButtonsForUnity/Scripts/VirtualDPad.cs"
-"Assets/_Dorami/05.Assets/VirtualButtonsForUnity/VirtualButtonsForUnity/Scripts/VirtualJoystick.cs"
-"Assets/_Dorami/05.Assets/VirtualButtonsForUnity/VirtualButtonsForUnity/Scripts/VirtualJoystickFloating.cs"
 -langversion:9.0
 /deterministic
 /optimize+

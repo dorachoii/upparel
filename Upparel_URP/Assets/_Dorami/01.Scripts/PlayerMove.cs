@@ -31,10 +31,11 @@ public class PlayerMove : MonoBehaviour
     {
         isGrounded = cc.isGrounded;
 
-        if (isGrounded && playerVelocity.y < 0)
-        {
-            playerVelocity.y = 0;
-        }
+        // 떨어지지 않기 위해.. 콜라이더가 있는데도 필요한 코드인가?
+        // if (isGrounded && playerVelocity.y < 0)
+        // {
+        //     playerVelocity.y = 0;
+        // }
 
         Vector2 movement = playerInput.Player.Move.ReadValue<Vector2>();
         Vector3 move = new Vector3(movement.x, 0, movement.y);
@@ -47,29 +48,19 @@ public class PlayerMove : MonoBehaviour
         {
             cc.Move(move * Time.deltaTime * playerSpeed);
 
-            gameObject.transform.forward = -move;
+            gameObject.transform.forward = move;
             animator.SetTrigger("IdleToWalk");
         }
 
         bool jumpPress = playerInput.Player.Jump.triggered;
         if (jumpPress && isGrounded)
         {
-            // animator.SetTrigger("IdleToJump");
+            animator.SetTrigger("IdleToJump");
             playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
         }
         
         playerVelocity.y += gravityValue * Time.deltaTime;
         cc.Move(playerVelocity * Time.deltaTime);
-    }
-
-    private void OnEnable()
-    {
-        playerInput.Enable();
-    }
-
-    private void OnDisable()
-    {
-        playerInput.Disable();
     }
 
     public void think()
