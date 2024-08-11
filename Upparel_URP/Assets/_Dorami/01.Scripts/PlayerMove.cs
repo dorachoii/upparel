@@ -86,18 +86,30 @@ public class PlayerMove : MonoBehaviour
     }
 
     private IEnumerator SmoothLookAt(Transform target, float duration)
+{
+    Quaternion initialRotation = transform.rotation;
+
+    // target의 위치와 현재 오브젝트의 위치를 이용해 방향을 계산
+    Vector3 direction = target.position - transform.position;
+
+    // y축 회전을 유지하기 위해 x, z 값을 0으로 고정
+    direction.y = 0;
+
+    // LookRotation을 통해 새로운 타겟 회전을 계산
+    Quaternion targetRotation = Quaternion.LookRotation(-direction);
+
+    float elapsedTime = 0f;
+
+    while (elapsedTime < duration)
     {
-        Quaternion initialRotation = transform.rotation;
-        Quaternion targetRotation = Quaternion.LookRotation( transform.position - target.position);
-        float elapsedTime = 0f;
-
-        while (elapsedTime < duration)
-        {
-            transform.rotation = Quaternion.Slerp(initialRotation, targetRotation, elapsedTime / duration);
-            elapsedTime += Time.deltaTime;
-            yield return null;
-        }
-
-        transform.rotation = targetRotation;
+        // initialRotation에서 targetRotation으로의 부드러운 회전 (y축만 회전)
+        transform.rotation = Quaternion.Slerp(initialRotation, targetRotation, elapsedTime / duration);
+        elapsedTime += Time.deltaTime;
+        yield return null;
     }
+
+    // 최종적으로 y축 회전을 targetRotation으로 설정
+    transform.rotation = targetRotation;
+}
+
 }

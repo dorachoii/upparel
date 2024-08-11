@@ -33,11 +33,17 @@ public class InteractableItem : MonoBehaviour
         print("태그는" + gameObject.tag);
 
         if(gameObject.CompareTag("Trash")){
-            ui.Btn_Funding.SetActive(true);
+            ui.Canvas_challenge.SetActive(true);
+            PlayerMove.Instance.think();
+
         }else if(gameObject.CompareTag("Building")){
             
-            ui.Btn_Donation.SetActive(true);
-            ui.Btn_Tracking.SetActive(true);
+            ui.Canvas_shopUI.SetActive(true);
+            PlayerMove.Instance.think();
+            
+        }else if(gameObject.CompareTag("UpparelCenter")){
+            ui.Canvas_challenge.SetActive(true);
+            PlayerMove.Instance.think();
         }
     }
 
@@ -47,11 +53,16 @@ public class InteractableItem : MonoBehaviour
         selectedOne.SetActive(false);
 
         if(gameObject.CompareTag("Trash")){
-            ui.Btn_Funding.SetActive(false);
+            ui.Canvas_challenge.SetActive(false);
+            PlayerMove.Instance.idle();
 
         }else if(gameObject.CompareTag("Building")){
-            ui.Btn_Donation.SetActive(false);
-            ui.Btn_Tracking.SetActive(false);
+            ui.Canvas_shopUI.SetActive(false);
+            PlayerMove.Instance.idle();
+            
+        }else if(gameObject.CompareTag("UpparelCenter")){
+            ui.Canvas_challenge.SetActive(false);
+            PlayerMove.Instance.idle();
         }
     }
 

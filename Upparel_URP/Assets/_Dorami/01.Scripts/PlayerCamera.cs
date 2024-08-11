@@ -7,11 +7,11 @@ public class PlayerCamera : MonoBehaviour
     public Transform player; // 플레이어의 트랜스폼을 지정
 
     private Vector3 initialOffset;  // 카메라와 플레이어 사이의 초기 오프셋
-    private Vector3 zoomedInOffset = new Vector3(0.1f, 0.5f, -2f); // 줌인시 사용할 오프셋
+    private Vector3 zoomedInOffset = new Vector3(0.1f, 1f, -3.5f); // 줌인시 사용할 오프셋
     private Vector3 currentOffset; // 현재 오프셋
 
     private Quaternion initialRotation; // 초기 회전값
-    private Quaternion zoomedInRotation = Quaternion.Euler(0, 20, 0); // 줌인시 사용할 회전값
+    private Quaternion zoomedInRotation = Quaternion.Euler(0, 35, 0); // 줌인시 사용할 회전값
     private Quaternion currentRotation; // 현재 회전값
 
     private bool isZooming = false; // 줌 중인지 여부를 나타내는 플래그

@@ -7,13 +7,9 @@ public class UIManager : MonoBehaviour
 {
     public static UIManager instance;
 
-    public GameObject Btn_Funding;
-    public GameObject Btn_Donation;
-    public GameObject Btn_Tracking;
-    public GameObject Page_Donation;
-    public GameObject Page_Tracking;
-    public GameObject Page_Funding;
-    public GameObject Slider_Funding;
+    public GameObject Canvas_shopUI;
+    public GameObject Canvas_center;
+    public GameObject Canvas_challenge;
 
     private Slider sliderComponent;
 
@@ -21,50 +17,50 @@ public class UIManager : MonoBehaviour
 
     private void Awake() {
         instance = this;
-        sliderComponent = Slider_Funding.GetComponent<Slider>();
+        
     }
 
-    public void pushFBtn()
-    {
-        TogglePage(Page_Funding);
-    }
+    // public void pushFBtn()
+    // {
+    //     TogglePage(Canvas_challenge);
+    // }
 
-    public void pushDBtn()
-    {
-        TogglePage(Page_Donation);
-    }
+    // public void pushDBtn()
+    // {
+    //     TogglePage(Canvas_shopUI);
+    // }
 
-    public void pushTBtn()
-    {
-        TogglePage(Page_Tracking);
-    }
+    // public void pushTBtn()
+    // {
+    //     TogglePage(Canvas_center);
+    // }
 
-    private void TogglePage(GameObject page)
-    {
-        if (!page.activeSelf)
-        {
-            DisableAllPages();
-            PlayerMove.Instance.think();
-            page.SetActive(true);
-        }
-        else
-        {
-            PlayerMove.Instance.idle();
-            page.SetActive(false);
-        }
-    }
+    // private void TogglePage(GameObject page)
+    // {
+    //     if (!page.activeSelf)
+    //     {
+    //         DisableAllPages();
+    //         PlayerMove.Instance.think();
+    //         page.SetActive(true);
+    //     }
+    //     else
+    //     {
+    //         PlayerMove.Instance.idle();
+    //         page.SetActive(false);
+    //     }
+    // }
 
-    private void DisableAllPages()
-    {   
-        Page_Funding.SetActive(false);
-        Page_Donation.SetActive(false);
-        Page_Tracking.SetActive(false);
-    }
+    // private void DisableAllPages()
+    // {   
+    //     Canvas_challenge.SetActive(false);
+    //     Canvas_shopUI.SetActive(false);
+    //     Canvas_center.SetActive(false);
+    // }
 
-    public void fund()
-    {
-        maxCnt++;
-        float newValue = 100f / maxCnt;
-        sliderComponent.value = newValue; // 슬라이더 값 설정
-    }
+    // public void fund()
+    // {
+    //     maxCnt++;
+    //     float newValue = 100f / maxCnt;
+    //     sliderComponent.value = newValue; // 슬라이더 값 설정
+    // }
 }
