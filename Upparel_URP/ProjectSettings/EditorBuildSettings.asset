@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MetaverseScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/__forSubmit/Login_DH.unity
+    guid: ac277535f75a54755957cbe15d1589a8
+  - enabled: 1
+    path: Assets/__forSubmit/MetaverseScene_Loading.unity
+    guid: 875182d7479df49a0b48a78b1501f82f
+  - enabled: 1
+    path: Assets/__forSubmit/MetaverseScene_Main.unity
+    guid: b11b62b53733041c89aaf6eadd59c877
   m_configObjects: {}
