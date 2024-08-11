@@ -8,7 +8,7 @@ public class SoundManager : MonoBehaviour
     public AudioSource audioSource_BG;
     public AudioSource audioSource_SFX;
 
-    private static SoundManager instance;
+    public static SoundManager instance;
 
     void Awake()
     {
