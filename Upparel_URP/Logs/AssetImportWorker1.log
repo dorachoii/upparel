@@ -270,3 +270,63 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 476.357559 seconds.
+  path: Assets/Sprites/shop/tab/1_brand_info_on.png
+  artifactKey: Guid(9281f04e677224671a8947b7807ee9f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/shop/tab/1_brand_info_on.png using Guid(9281f04e677224671a8947b7807ee9f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+ -> (artifact id: 'd58c711383ae76f998819d5a82f4036a') in 0.099913 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/DH_UPPAREL/Unity/2다운로드 (2).png
+  artifactKey: Guid(b5a120cc99fd80f44a8cf31c4e9cf2bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DH_UPPAREL/Unity/2다운로드 (2).png using Guid(b5a120cc99fd80f44a8cf31c4e9cf2bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+ -> (artifact id: 'c0f6825928a34015796cf91d0b139de8') in 0.008240 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Sprites/shop/tab/2_archive.png
+  artifactKey: Guid(15d262b197c3e4faab95934836127c3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/shop/tab/2_archive.png using Guid(15d262b197c3e4faab95934836127c3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+ -> (artifact id: '954d5dc698aa76d3a56296c93da781f5') in 0.007255 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Sprites/alarm/alarm_detail_row5.png
+  artifactKey: Guid(2b6679faf091d44f0aee8966fdc10a75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/alarm/alarm_detail_row5.png using Guid(2b6679faf091d44f0aee8966fdc10a75) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+ -> (artifact id: '205f519aa09d55f35b1b15e8eb0c56be') in 0.006352 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.716479 seconds.
+  path: Assets/_Dorami/05.Assets/VirtualButtonsForUnity/VirtualButtonsForUnity/Sprites/circle-border.png
+  artifactKey: Guid(0292bb946198207e9b17503e15966465) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dorami/05.Assets/VirtualButtonsForUnity/VirtualButtonsForUnity/Sprites/circle-border.png using Guid(0292bb946198207e9b17503e15966465) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+ -> (artifact id: '00f5723600b3181811a943a7b77da574') in 0.015397 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 586.509452 seconds.
+  path: Assets/Sprites/fixed/cart/back.png
+  artifactKey: Guid(1f066789277a54277a10d622bea4a05c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/fixed/cart/back.png using Guid(1f066789277a54277a10d622bea4a05c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+ -> (artifact id: 'b0c52610271918ff7e6559d79d7716b0') in 0.012979 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
