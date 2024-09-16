@@ -5,14 +5,21 @@ using TMPro;
 public class CharacterView : MonoBehaviour
 {
     [SerializeField]
+    TMP_Text prev_nickText;
+    [SerializeField]
     TMP_Text nickText;
+
     // Start is called before the first frame update
     void Start()
     {
+        // ìŠ¤íƒ ì¼ë‹¨ ì´ê±° ëŒê²Œìš”
+        /*
         object objnickname;
-        PageManager.Get.data.TryGetValue("nickname",out objnickname);
+        PageManager.Get.data.TryGetValue("nickname", out objnickname);
         string nickname = (string)objnickname;
-        nickText.text = nickname + "´ÔÀ» ³ªÅ¸³»´Â\nÄ³¸¯ÅÍ¸¦ °ñ¶óÁÖ¼¼¿ä";
+        */
+
+        nickText.text = prev_nickText.text;
     }
 
     // Update is called once per frame

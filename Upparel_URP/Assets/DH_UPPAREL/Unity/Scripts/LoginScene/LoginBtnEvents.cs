@@ -43,7 +43,7 @@ public class LoginBtnEvents : MonoBehaviour
         addFieldsEvent(p1_registerBtn, emailField,emailField2,passwordField,passwordField2,nicknameField);
         addFieldsEvent(business_log,business_login_email_field, business_login_password_field);
         
-        //À½..
+        //ï¿½ï¿½..
         /*for(int i = 0; i < charButtons.Length; i++)
         {
             charButtons[i].OnEnable = () => { startBtn.interactable = true; };
@@ -65,7 +65,7 @@ public class LoginBtnEvents : MonoBehaviour
     {
         string email = "";
         string password = "";
-        //³Ê ´©±¸ÇÑÅ×¼­ È£ÃâÇÑ°Å¾ß?
+        //ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¼ï¿½ È£ï¿½ï¿½ï¿½Ñ°Å¾ï¿½?
         if (PageManager.Get.CurrentPage.address == "LoginPage")
         {
             email = login_email_field.text;
@@ -76,7 +76,7 @@ public class LoginBtnEvents : MonoBehaviour
             email = business_login_email_field.text;
             password = business_login_password_field.text;
         }
-        //¼­¹ö Á¢¼Ó
+        //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         
         Debug.Log(email);
         Debug.Log(password);
@@ -85,7 +85,7 @@ public class LoginBtnEvents : MonoBehaviour
                 //new KeyValue<string, string>("Content-Type", "application/json; charset=utf-8")
             })
             .ReqHandler((webreq) => {
-                //¿äÃ»ÀÌ ¼º°øÀûÀÌ¸é ÆäÀÌÁö Ã¼ÀÎÁö.
+                //ï¿½ï¿½Ã»ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã¼ï¿½ï¿½ï¿½ï¿½.
                 ResponseDTO<MemberVO> responseDTO = JsonUtility.FromJson<ResponseDTO<MemberVO>>(webreq.downloadHandler.text);
                 print(responseDTO.results.nickname);
 
@@ -100,7 +100,7 @@ public class LoginBtnEvents : MonoBehaviour
 
         
 
-        //À¯Àú Á¤º¸¿¡ µû¸¥ ¾À ÀüÈ¯ 
+        //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½È¯ 
 
 
     }
@@ -131,7 +131,7 @@ public class LoginBtnEvents : MonoBehaviour
     MemberVO member = new MemberVO();
     public void Register()
     {
-        Debug.Log("È¸¿ø°¡ÀÔ ÁøÇàÁß!");
+        Debug.Log("È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½!");
         object objrule = null;
         PageManager.Get.data.TryGetValue("rule",out objrule);
         string rule = (string)objrule;
@@ -155,9 +155,9 @@ public class LoginBtnEvents : MonoBehaviour
             password_message.SetActive(true);
             return; 
         }
-        Debug.Log("ÁøÇàÁß!");
+        Debug.Log("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½!");
 
-        //±¸Á¶ ¸¸µé±â 
+        //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ 
         MemberVO vo = member;
         vo.email = email;
         vo.password = password;
@@ -172,7 +172,7 @@ public class LoginBtnEvents : MonoBehaviour
                 new KeyValue<string, string>("Content-Type", "application/json; charset=utf-8")
             })
             .ReqHandler((webreq) => {
-                //¿äÃ»ÀÌ ¼º°øÀûÀÌ¸é ÆäÀÌÁö Ã¼ÀÎÁö.
+                //ï¿½ï¿½Ã»ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã¼ï¿½ï¿½ï¿½ï¿½.
                 ResponseDTO<string> responseDTO = JsonUtility.FromJson<ResponseDTO<string>>(webreq.downloadHandler.text);
                 ResponseMessage msg = ShowMessage(responseDTO.results);
                 switch (msg)
@@ -195,9 +195,10 @@ public class LoginBtnEvents : MonoBehaviour
             })
             .build();
         
-        StartCoroutine(HttpRequestManager.Post(req, json));
+        //StartCoroutine(HttpRequestManager.Post(req, json));
 
-        
+        PageManager.Get.data.Add("nickname", nickname);
+                        PageManager.Get.ChangePage("/", "Character");
     }
 
 
@@ -214,7 +215,7 @@ public class LoginBtnEvents : MonoBehaviour
                 new KeyValue<string, string>("Content-Type", "application/json; charset=utf-8")
             })
             .ReqHandler((Action<UnityEngine.Networking.UnityWebRequest>)((webreq) => {
-                //¿äÃ»ÀÌ ¼º°øÀûÀÌ¸é ÆäÀÌÁö Ã¼ÀÎÁö.
+                //ï¿½ï¿½Ã»ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã¼ï¿½ï¿½ï¿½ï¿½.
                 /*ResponseDTO<string> responseDTO = JsonUtility.FromJson<ResponseDTO<string>>(webreq.downloadHandler.text);
                 ShowMessage(responseDTO.results);*/
 

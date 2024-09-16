@@ -1,1 +1,0 @@
-Temp/ScriptUpdater/325267976/204018757_HttpRequestManager.cs => Assets/DH_UPPAREL/UPPAREL_API/Upparel_Network/Scripts/HTTP/HttpRequestManager.cs

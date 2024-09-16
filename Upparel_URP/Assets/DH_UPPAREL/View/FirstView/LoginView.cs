@@ -8,11 +8,12 @@ using UnityEngine.Events;
 
 public class LoginView : UINode
 {
+    
+    [SerializeField]
+    Toggle toggle_selectCustomer;
+    [SerializeField]
+    Toggle toggle_selectBusiness;
 
-    [SerializeField]
-    Button btn_selectCustomer;
-    [SerializeField]
-    Button btn_selectBusiness;
 
     //c is customer and b is business
     [SerializeField]
@@ -37,15 +38,16 @@ public class LoginView : UINode
     [SerializeField]
     Button btn_b_register;
 
-    //·Î±×ÀÎ ½Ã »ç¿ëÇÒ ¾×¼Ç
+    //ï¿½Î±ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½×¼ï¿½
     public UnityEvent onSuccess_C_Login;
     public UnityEvent onSuccess_B_Login;
+
     public override void Init()
     {
         base.Init();
-        //UI ¸ÅÇÎ
-        UILink.LinkSetComponent<Button>(out btn_selectCustomer, btn_selectCustomer, "");
-        UILink.LinkSetComponent<Button>(out btn_selectBusiness, btn_selectBusiness, "");
+        //UI ï¿½ï¿½ï¿½ï¿½
+        UILink.LinkSetComponent<Toggle>(out toggle_selectCustomer, toggle_selectCustomer, "");
+        UILink.LinkSetComponent<Toggle>(out toggle_selectBusiness, toggle_selectBusiness, "");
 
         UILink.LinkSetComponent<TMP_InputField>(out field_c_password, field_c_password, "");
         UILink.LinkSetComponent<TMP_InputField>(out field_b_password, field_b_password, "");
@@ -56,10 +58,16 @@ public class LoginView : UINode
         UILink.LinkSetComponent<Button>(out btn_submit, btn_submit, "");
     }
     // Start is called before the first frame update
+
     void Start()
     {
-        btn_selectCustomer.onClick.AddListener(SelectCustomer); 
-        btn_selectBusiness.onClick.AddListener(SelectBusiness);
+        toggle_selectCustomer.onValueChanged.AddListener((isSelected) => {
+            if (isSelected) SelectCustomer();
+        });
+
+        toggle_selectBusiness.onValueChanged.AddListener((isSelected) => {
+            if (isSelected) SelectBusiness();
+        });
         btn_submit.onClick.AddListener(Submit);
 
         field_c_email.onValueChanged.AddListener((s)=> {
@@ -90,6 +98,7 @@ public class LoginView : UINode
     }
 
     bool isSelectedCustomer = true;
+
     public void SelectCustomer()
     {
         informationBoard_b.SetActive(false);
@@ -110,8 +119,8 @@ public class LoginView : UINode
 
     public void Submit()
     {
-        //Ä¿½ºÅÍ¸Ó ºñÁî´Ï½º ºÐ±â ÇÏ±â
-        //ºÐ±â ±âÁØ : ³»°¡ ¹«¾ùÀ» ´­·¶´ÂÁö
+        //Ä¿ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½ï¿½ï¿½ï¿½Ï½ï¿½ ï¿½Ð±ï¿½ ï¿½Ï±ï¿½
+        //ï¿½Ð±ï¿½ ï¿½ï¿½ï¿½ï¿½ : ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         if (isSelectedCustomer)
         {
             string email = field_c_email.text;
