@@ -22,7 +22,7 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49460
+49724
 Successfully changed project path to: /Users/dora/Documents/GitHub/upparel/Upparel_URP
 /Users/dora/Documents/GitHub/upparel/Upparel_URP
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -58,12 +58,14 @@ Successfully changed project path to: /Users/dora/Documents/GitHub/upparel/Uppar
     "memorysetup-temp-allocator-size-gfx=262144"
 Player connection [8088215232]  Target information:
 
-Player connection [8088215232]  * "[IP] 192.168.1.59 [Port] 0 [Flags] 2 [Guid] 2981593582 [EditorId] 2981593582 [Version] 1048832 [Id] OSXEditor(0,dorauiMcBookPro) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8088215232]  * "[IP] 192.168.0.146 [Port] 0 [Flags] 2 [Guid] 1069291867 [EditorId] 1069291867 [Version] 1048832 [Id] OSXEditor(0,doraui-MacBookPro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+
+Player connection [8088215232]  * "[IP] 169.254.245.152 [Port] 0 [Flags] 2 [Guid] 1069291867 [EditorId] 1069291867 [Version] 1048832 [Id] OSXEditor(0,doraui-MacBookPro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
 Player connection [8088215232] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [8088215232] Host joined alternative multi-casting on [225.0.0.222:34997]...
 [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-Refreshing native plugins compatible for Editor in 5.69 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 25.09 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.38f1 (c5d5a7410213)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.38f1/Unity.app/Contents/Resources/UnitySubsystems
@@ -78,50 +80,50 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.38f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.38f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2022.3.38f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56069
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56924
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.38f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.38f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.000723 seconds.
-- Loaded All Assemblies, in  0.163 seconds
+Registered in 0.003297 seconds.
+- Loaded All Assemblies, in  0.263 seconds
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
+[usbmuxd] Attached: 4 00008110-00160D963C32801E
 Native extension for iOS target not found
-[usbmuxd] Attached: 2 00008110-00160D963C32801E
 Native extension for OSXStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.171 seconds
-Domain Reload Profiling: 334ms
-	BeginReloadAssembly (39ms)
+- Finished resetting the current domain, in  0.235 seconds
+Domain Reload Profiling: 498ms
+	BeginReloadAssembly (78ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (19ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (23ms)
-	LoadAllAssembliesAndSetupDomain (76ms)
-		LoadAssemblies (38ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (113ms)
+		LoadAssemblies (78ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (75ms)
-			TypeCache.Refresh (75ms)
-				TypeCache.ScanAssembly (68ms)
+		AnalyzeDomain (112ms)
+			TypeCache.Refresh (111ms)
+				TypeCache.ScanAssembly (101ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (171ms)
+	FinalizeReload (235ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (141ms)
+		SetupLoadedEditorAssemblies (193ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (49ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (62ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (1ms)
-			ProcessInitializeOnLoadAttributes (67ms)
-			ProcessInitializeOnLoadMethodAttributes (21ms)
+			ProcessInitializeOnLoadAttributes (96ms)
+			ProcessInitializeOnLoadMethodAttributes (30ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -129,8 +131,8 @@ Domain Reload Profiling: 334ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.320 seconds
-Refreshing native plugins compatible for Editor in 0.85 ms, found 2 plugins.
+- Loaded All Assemblies, in  0.535 seconds
+Refreshing native plugins compatible for Editor in 1.52 ms, found 2 plugins.
 Native extension for iOS target not found
 Native extension for OSXStandalone target not found
 Package Manager log level set to [2]
@@ -138,552 +140,190 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.392 seconds
-Domain Reload Profiling: 713ms
-	BeginReloadAssembly (57ms)
+- Finished resetting the current domain, in  0.650 seconds
+Domain Reload Profiling: 1184ms
+	BeginReloadAssembly (84ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (2ms)
+		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (14ms)
-	RebuildCommonClasses (19ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (18ms)
-	LoadAllAssembliesAndSetupDomain (220ms)
-		LoadAssemblies (125ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (389ms)
+		LoadAssemblies (252ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (119ms)
-			TypeCache.Refresh (102ms)
-				TypeCache.ScanAssembly (91ms)
-			ScanForSourceGeneratedMonoScriptInfo (9ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (392ms)
+		AnalyzeDomain (172ms)
+			TypeCache.Refresh (148ms)
+				TypeCache.ScanAssembly (132ms)
+			ScanForSourceGeneratedMonoScriptInfo (13ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (650ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (308ms)
+		SetupLoadedEditorAssemblies (525ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (11ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (37ms)
-			ProcessInitializeOnLoadAttributes (229ms)
-			ProcessInitializeOnLoadMethodAttributes (28ms)
-			AfterProcessingInitializeOnLoad (0ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (1ms)
-Launching external process: /Applications/Unity/Hub/Editor/2022.3.38f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
-Refreshing native plugins compatible for Editor in 1.47 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5645 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 99 unused Assets / (442.3 KB). Loaded Objects now: 6109.
-Memory consumption went from 236.8 MB to 236.3 MB.
-Total: 3.206041 ms (FindLiveObjects: 0.201084 ms CreateObjectMapping: 0.053583 ms MarkObjects: 2.730458 ms  DeleteObjects: 0.220250 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x2a026b000 may have been prematurely finalized
-- Loaded All Assemblies, in  0.216 seconds
-Refreshing native plugins compatible for Editor in 1.38 ms, found 2 plugins.
-Native extension for iOS target not found
-Native extension for OSXStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.479 seconds
-Domain Reload Profiling: 695ms
-	BeginReloadAssembly (71ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (2ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (26ms)
-	RebuildCommonClasses (19ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (11ms)
-	LoadAllAssembliesAndSetupDomain (108ms)
-		LoadAssemblies (120ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (12ms)
-			TypeCache.Refresh (4ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (479ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (278ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (11ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (43ms)
-			ProcessInitializeOnLoadAttributes (191ms)
-			ProcessInitializeOnLoadMethodAttributes (30ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Refreshing native plugins compatible for Editor in 1.53 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5477 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 56 unused Assets / (426.6 KB). Loaded Objects now: 6125.
-Memory consumption went from 209.7 MB to 209.3 MB.
-Total: 2.911583 ms (FindLiveObjects: 0.187084 ms CreateObjectMapping: 0.054083 ms MarkObjects: 2.474958 ms  DeleteObjects: 0.194666 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 2224.928543 seconds.
-  path: Assets/_Dorami/04.Sprites/joystick1.png
-  artifactKey: Guid(3999f5ac2998542a9a18f0c098d0270f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/04.Sprites/joystick1.png using Guid(3999f5ac2998542a9a18f0c098d0270f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '4aa7389472b5cb0ba3fbc64e76a8fc06') in 0.062389 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 3.422261 seconds.
-  path: Assets/_Dorami/05.Assets
-  artifactKey: Guid(683a763b3552c4356b3d8ed88727e0c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/05.Assets using Guid(683a763b3552c4356b3d8ed88727e0c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '82dd241f5d5a5eec6f2f8d38c02d84aa') in 0.000559 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.394620 seconds.
-  path: Assets/_Dorami/04.Sprites/Duck.png
-  artifactKey: Guid(d2304816ff3e140b3bd7a65c9e993bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/04.Sprites/Duck.png using Guid(d2304816ff3e140b3bd7a65c9e993bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '41b27c3b9a247769ae07775da8a4bf91') in 0.009364 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.586947 seconds.
-  path: Assets/_Dorami/04.Sprites/FOX2.png
-  artifactKey: Guid(b015416bf301f4ac9bd6f47e88b0f805) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/04.Sprites/FOX2.png using Guid(b015416bf301f4ac9bd6f47e88b0f805) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'eec4a190a234eff96d1e792c2c821c9d') in 0.004288 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.931793 seconds.
-  path: Assets/_Dorami/04.Sprites/joystick0.png
-  artifactKey: Guid(de0192246821e479eadb2e2f90123331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/04.Sprites/joystick0.png using Guid(de0192246821e479eadb2e2f90123331) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'a8b340a9fb37f3c3a475a046d77e568e') in 0.011769 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.737189 seconds.
-  path: Assets/_Dorami/04.Sprites/profile 4.png
-  artifactKey: Guid(54a18e6aa0ac941a2becbe5a036b89d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/04.Sprites/profile 4.png using Guid(54a18e6aa0ac941a2becbe5a036b89d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '38dfa77aa7dd36df133e56f575b178b3') in 0.004616 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 14.550028 seconds.
-  path: Assets/_Dorami/04.Sprites/Profile
-  artifactKey: Guid(164cd789b5456445eb32125ffaf8e298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/04.Sprites/Profile using Guid(164cd789b5456445eb32125ffaf8e298) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'acb189b9e266d897a7e8fac2d2083ce4') in 0.000379 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 11.945762 seconds.
-  path: Assets/_Dorami/04.Sprites/Profile/shark.png
-  artifactKey: Guid(86ff8ee8f29a94484ab2b9a90dbf37e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/04.Sprites/Profile/shark.png using Guid(86ff8ee8f29a94484ab2b9a90dbf37e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '3d8df8d321a2d33988c64b781d73e3f9') in 0.007254 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.172659 seconds.
-  path: Assets/_Dorami/04.Sprites/Profile/Duck.png
-  artifactKey: Guid(427aa1cbf25e3499b886007d1c70e3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/04.Sprites/Profile/Duck.png using Guid(427aa1cbf25e3499b886007d1c70e3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'ea289f317f6dd7c692c9afe85560e0a2') in 0.004387 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.514867 seconds.
-  path: Assets/_Dorami/04.Sprites/Profile/profile2 1.png
-  artifactKey: Guid(596e7f01eeef74ab5a0bf7eeee82f485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/04.Sprites/Profile/profile2 1.png using Guid(596e7f01eeef74ab5a0bf7eeee82f485) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '247c85915f46de718dc9e4386120494a') in 0.004992 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 23.150838 seconds.
-  path: Assets/_Dorami/04.Sprites/Profile/profile2 1.png
-  artifactKey: Guid(596e7f01eeef74ab5a0bf7eeee82f485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/04.Sprites/Profile/profile2 1.png using Guid(596e7f01eeef74ab5a0bf7eeee82f485) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '930f2cd7f8ee17f61067e35d6fa21aac') in 0.012159 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 265.156990 seconds.
-  path: Assets/Sprites/shop/tab/1_brand_info.png
-  artifactKey: Guid(a6add6d70490a4a4dbfd851db339d596) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/shop/tab/1_brand_info.png using Guid(a6add6d70490a4a4dbfd851db339d596) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'db56e701f4620a31ff5e2eb9a998e232') in 0.027161 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000086 seconds.
-  path: Assets/Sprites/alarm/alarm_detail_row4.png
-  artifactKey: Guid(eed709e4571154575be31f12acf2d7c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/alarm/alarm_detail_row4.png using Guid(eed709e4571154575be31f12acf2d7c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'de938b8cbc9a37a33b8a0e952aa52a38') in 0.006807 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000090 seconds.
-  path: Assets/Sprites/center/3d_collect.png
-  artifactKey: Guid(b7ea0ceb1be5f459bb167fba2bca6caf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/center/3d_collect.png using Guid(b7ea0ceb1be5f459bb167fba2bca6caf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'c648610054f6895f4c14b8528b52637e') in 0.007170 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Sprites/shop/tab/3_merchandise.png
-  artifactKey: Guid(56be86a3322f048e0bd4aa0bf43e9269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/shop/tab/3_merchandise.png using Guid(56be86a3322f048e0bd4aa0bf43e9269) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'a1d0567ee471b2017de3c43d97da1247') in 0.006436 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Sprites/alarm/alarm_detail_row2.png
-  artifactKey: Guid(b0b0fe931a43c41ada586016ec1682d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/alarm/alarm_detail_row2.png using Guid(b0b0fe931a43c41ada586016ec1682d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'd839a61b1e93d396ae2bf95917e5c20e') in 0.006889 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/__forSubmit/Spirtes/alert.png
-  artifactKey: Guid(ed1961e188aa742c398bbe0fc0e94787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/__forSubmit/Spirtes/alert.png using Guid(ed1961e188aa742c398bbe0fc0e94787) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'bfdba2b93d3fa0b058776aa90ee07345') in 0.006819 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Sprites/shop/tab/2_archive_on.png
-  artifactKey: Guid(4fb038a8899cb49be8cda77f458ff50e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/shop/tab/2_archive_on.png using Guid(4fb038a8899cb49be8cda77f458ff50e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'c8120d710bdaecf6aaaa1da21eae1449') in 0.005534 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Sprites/center/3d_history.png
-  artifactKey: Guid(e2a8482db17344d61be6ace54f62a674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/center/3d_history.png using Guid(e2a8482db17344d61be6ace54f62a674) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '4f1a34957d30c663a5e7b5669d557763') in 0.007613 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000085 seconds.
-  path: Assets/Sprites/shop/tab/3_merchandise_on.png
-  artifactKey: Guid(5f4aaa3e6a9a546e387228bfed847bf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/shop/tab/3_merchandise_on.png using Guid(5f4aaa3e6a9a546e387228bfed847bf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'cfcfdb1c127824079fd8af0a7e33476d') in 0.005827 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 1.721488 seconds.
-  path: Assets/_Dorami/05.Assets/VirtualButtonsForUnity/VirtualButtonsForUnity/Sprites/circle.png
-  artifactKey: Guid(098b426cb73dd953886efddf38416b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/05.Assets/VirtualButtonsForUnity/VirtualButtonsForUnity/Sprites/circle.png using Guid(098b426cb73dd953886efddf38416b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '17b7972975512187db37d6fc6f5ffcc7') in 0.015765 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 283.774605 seconds.
-  path: Assets/_Dorami/04.Sprites/Profile/profile 4.png
-  artifactKey: Guid(0825375434fe7402f91533269debaa63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/04.Sprites/Profile/profile 4.png using Guid(0825375434fe7402f91533269debaa63) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'f546989f68d3da9a4d0c05209580b41f') in 0.017358 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 302.708609 seconds.
-  path: Assets/__forSubmit/Spirtes/arrow_back.png
-  artifactKey: Guid(47df89d2c5ddf4eaaabb10fe1c3e1734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/__forSubmit/Spirtes/arrow_back.png using Guid(47df89d2c5ddf4eaaabb10fe1c3e1734) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'f7509bb445e2f13331a5f3006a26f9b0') in 0.013896 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x17f687000 may have been prematurely finalized
-- Loaded All Assemblies, in  0.268 seconds
-Refreshing native plugins compatible for Editor in 0.99 ms, found 2 plugins.
-Native extension for iOS target not found
-Native extension for OSXStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.014 seconds
-Domain Reload Profiling: 1282ms
-	BeginReloadAssembly (85ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (2ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (33ms)
-	RebuildCommonClasses (20ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (12ms)
-	LoadAllAssembliesAndSetupDomain (143ms)
-		LoadAssemblies (158ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (13ms)
-			TypeCache.Refresh (4ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (1014ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (306ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (14ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (49ms)
-			ProcessInitializeOnLoadAttributes (205ms)
-			ProcessInitializeOnLoadMethodAttributes (33ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-Refreshing native plugins compatible for Editor in 1.69 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5477 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 56 unused Assets / (426.8 KB). Loaded Objects now: 6156.
-Memory consumption went from 214.9 MB to 214.5 MB.
-Total: 3.281750 ms (FindLiveObjects: 0.231791 ms CreateObjectMapping: 0.056500 ms MarkObjects: 2.825666 ms  DeleteObjects: 0.167167 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 367.610766 seconds.
-  path: Assets/_Dorami/03.Models/character/Cute Humanoid Animals
-  artifactKey: Guid(bf610c91b4e114b538885f1a2744016b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/character/Cute Humanoid Animals using Guid(bf610c91b4e114b538885f1a2744016b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'dcbf032217208e093d8511c43146b091') in 0.003017 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.567942 seconds.
-  path: Assets/_Dorami/03.Models/character/Cute Humanoid Animals/Scenes
-  artifactKey: Guid(fc5333724a8645e286960bf368c6183c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/character/Cute Humanoid Animals/Scenes using Guid(fc5333724a8645e286960bf368c6183c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '5c22b8c93869abb1ca74fda637483807') in 0.000639 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.922288 seconds.
-  path: Assets/_Dorami/03.Models/character/Cute Humanoid Animals/Scenes/Animals.unity
-  artifactKey: Guid(bf094ddb64a8467187d3b7663e9b4ff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/character/Cute Humanoid Animals/Scenes/Animals.unity using Guid(bf094ddb64a8467187d3b7663e9b4ff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '59435406c9cb8ef7d8a8c15b224e13af') in 0.000524 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 34.102306 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Models
-  artifactKey: Guid(e8711a9386d0486a9d27d9ba47e7ed0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Models using Guid(e8711a9386d0486a9d27d9ba47e7ed0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '06f5e4ac86a1279c97a5ba3c2c322adc') in 0.000529 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 8.619020 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Bear
-  artifactKey: Guid(c842d13fd4e34d90a7c7da3bcb517dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Bear using Guid(c842d13fd4e34d90a7c7da3bcb517dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'adaf131b62b52bc006698d287036af0d') in 0.000623 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 30.074614 seconds.
-  path: Assets/_Dorami/03.Models
-  artifactKey: Guid(273c115bf1bdc4715bbd92a2f1a40379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models using Guid(273c115bf1bdc4715bbd92a2f1a40379) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'fbc223636e21aa947919d3c54516bf38') in 0.000474 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 15.605961 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Duck
-  artifactKey: Guid(eae2e235210441b0824d03a4d53dfe35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Duck using Guid(eae2e235210441b0824d03a4d53dfe35) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'b8d3102c882a5b04649f0422fe2f8602') in 0.000804 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 8.958290 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Duck/Duck Walk Forward.fbx
-  artifactKey: Guid(202ed66ea33540f0aecfaf4835cf04c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Duck/Duck Walk Forward.fbx using Guid(202ed66ea33540f0aecfaf4835cf04c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'd2b1e86ac64ad3f69a788f6d3a02fa6d') in 0.244756 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 86
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x17f687000 may have been prematurely finalized
-- Loaded All Assemblies, in  0.279 seconds
-Refreshing native plugins compatible for Editor in 1.35 ms, found 2 plugins.
-Native extension for iOS target not found
-Native extension for OSXStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.967 seconds
-Domain Reload Profiling: 1247ms
-	BeginReloadAssembly (91ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (37ms)
-	RebuildCommonClasses (20ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (12ms)
-	LoadAllAssembliesAndSetupDomain (148ms)
-		LoadAssemblies (162ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (13ms)
-			TypeCache.Refresh (4ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (968ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (307ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (14ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (50ms)
-			ProcessInitializeOnLoadAttributes (207ms)
-			ProcessInitializeOnLoadMethodAttributes (33ms)
+			ProcessInitializeOnLoadAttributes (411ms)
+			ProcessInitializeOnLoadMethodAttributes (41ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Launching external process: /Applications/Unity/Hub/Editor/2022.3.38f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.06 seconds
+Refreshing native plugins compatible for Editor in 1.78 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5645 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 99 unused Assets / (443.5 KB). Loaded Objects now: 6109.
+Memory consumption went from 236.9 MB to 236.5 MB.
+Total: 4.528250 ms (FindLiveObjects: 0.246584 ms CreateObjectMapping: 0.076792 ms MarkObjects: 3.767500 ms  DeleteObjects: 0.426875 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 5441.943463 seconds.
+  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/AnimatorController
+  artifactKey: Guid(57a972177f12440789418ef6d27923e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/AnimatorController using Guid(57a972177f12440789418ef6d27923e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+ -> (artifact id: '7fb7741e58912ea205f1eee8e8fb115d') in 0.001356 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x2aa387000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.345 seconds
+Refreshing native plugins compatible for Editor in 2.33 ms, found 2 plugins.
+Native extension for iOS target not found
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.712 seconds
+Domain Reload Profiling: 1057ms
+	BeginReloadAssembly (117ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (46ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (18ms)
+	LoadAllAssembliesAndSetupDomain (171ms)
+		LoadAssemblies (193ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (18ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (712ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (383ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (60ms)
+			ProcessInitializeOnLoadAttributes (260ms)
+			ProcessInitializeOnLoadMethodAttributes (40ms)
 			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (8ms)
-Refreshing native plugins compatible for Editor in 1.62 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 2.04 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 5477 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 56 unused Assets / (426.8 KB). Loaded Objects now: 6252.
-Memory consumption went from 224.3 MB to 223.9 MB.
-Total: 3.372292 ms (FindLiveObjects: 0.280667 ms CreateObjectMapping: 0.067666 ms MarkObjects: 2.826667 ms  DeleteObjects: 0.196833 ms)
+Unloading 56 unused Assets / (427.8 KB). Loaded Objects now: 6125.
+Memory consumption went from 209.8 MB to 209.4 MB.
+Total: 3.532541 ms (FindLiveObjects: 0.278000 ms CreateObjectMapping: 0.074625 ms MarkObjects: 3.014208 ms  DeleteObjects: 0.164833 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16b687000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.371 seconds
+Refreshing native plugins compatible for Editor in 1.73 ms, found 2 plugins.
+Native extension for iOS target not found
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.023 seconds
+Domain Reload Profiling: 1394ms
+	BeginReloadAssembly (119ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (48ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (18ms)
+	LoadAllAssembliesAndSetupDomain (196ms)
+		LoadAssemblies (220ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (18ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (1023ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (369ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (56ms)
+			ProcessInitializeOnLoadAttributes (252ms)
+			ProcessInitializeOnLoadMethodAttributes (38ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 2.31 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5477 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 56 unused Assets / (427.9 KB). Loaded Objects now: 6141.
+Memory consumption went from 213.8 MB to 213.4 MB.
+Total: 3.668459 ms (FindLiveObjects: 0.210000 ms CreateObjectMapping: 0.072833 ms MarkObjects: 3.192542 ms  DeleteObjects: 0.192417 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -701,869 +341,282 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 45.513394 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Fox/Fox Walk Forward.fbx
-  artifactKey: Guid(0d3ad799c47c4d338623b4933faff73c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Fox/Fox Walk Forward.fbx using Guid(0d3ad799c47c4d338623b4933faff73c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'bc74949036b2520cccad4e919b803e29') in 0.189978 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 143.030828 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Prefabs
-  artifactKey: Guid(923ef47c8094465c8234a77ff3eeb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Prefabs using Guid(923ef47c8094465c8234a77ff3eeb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'ea86fba9c4b7bae33ce49fa30d83341d') in 0.000697 seconds
+  Time since last request: 2357.923059 seconds.
+  path: Assets/__forSubmit/MetaverseScene_Main.unity
+  artifactKey: Guid(b11b62b53733041c89aaf6eadd59c877) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__forSubmit/MetaverseScene_Main.unity using Guid(b11b62b53733041c89aaf6eadd59c877) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+ -> (artifact id: '3e2103122c7d3f6c022f57329ec023c2') in 0.001526 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 15.700473 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Prefabs/Fox A.prefab
-  artifactKey: Guid(fea8d6ae6bb14a77b8a7d1342891781d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Prefabs/Fox A.prefab using Guid(fea8d6ae6bb14a77b8a7d1342891781d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'c94ddbbfb1d8f143be0b4b6022a344df') in 0.035691 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 97
-========================================================================
-Received Import Request.
-  Time since last request: 33.325367 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Models/Bear.fbx
-  artifactKey: Guid(6074f275ef0d4eaba6a3c3a10dd2f32e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Models/Bear.fbx using Guid(6074f275ef0d4eaba6a3c3a10dd2f32e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'ac824492aeff7f9343c410d816340818') in 0.044725 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 73
-========================================================================
-Received Import Request.
-  Time since last request: 0.935279 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Models/Fox.fbx
-  artifactKey: Guid(896815c0ec6040759aabbe6e52152eae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Models/Fox.fbx using Guid(896815c0ec6040759aabbe6e52152eae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '0ea1e92508c4fcaaec51ff65ea50554b') in 0.030238 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 96
-========================================================================
-Received Import Request.
-  Time since last request: 103.513039 seconds.
-  path: Assets/_Dorami/04.Sprites/Profile/shark.png
-  artifactKey: Guid(86ff8ee8f29a94484ab2b9a90dbf37e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/04.Sprites/Profile/shark.png using Guid(86ff8ee8f29a94484ab2b9a90dbf37e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'b9dbe5d5044255d4e2d29cd4ddbcfcf9') in 0.027633 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 1.290879 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Run Forward.fbx
-  artifactKey: Guid(0f2143d5bbe6486e9d7af9f568ad978e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Run Forward.fbx using Guid(0f2143d5bbe6486e9d7af9f568ad978e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'e81ee2fd5a479f55fb54fda3a2835bd8') in 0.035250 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
-========================================================================
-Received Import Request.
-  Time since last request: 2.483929 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Run Left.fbx
-  artifactKey: Guid(943ed594958b482cb2fe2ebcea9d407d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Run Left.fbx using Guid(943ed594958b482cb2fe2ebcea9d407d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'c87cf4192d58108f7554369c416d057f') in 0.028258 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
-========================================================================
-Received Import Request.
-  Time since last request: 0.333055 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Run Right.fbx
-  artifactKey: Guid(ba53270b56254bcbb40d960f095540f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Run Right.fbx using Guid(ba53270b56254bcbb40d960f095540f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '1e42a61014ee91ca175180dbd15430a2') in 0.029134 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
-========================================================================
-Received Import Request.
-  Time since last request: 0.334961 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Thinking.fbx
-  artifactKey: Guid(e52cd340560349d6a5b5c7bf1049d036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Thinking.fbx using Guid(e52cd340560349d6a5b5c7bf1049d036) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'e1bdc8123849753855b17a20708f0e24') in 0.021539 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
-========================================================================
-Received Import Request.
-  Time since last request: 0.364219 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Walk Back.fbx
-  artifactKey: Guid(ac6c484c38094c1fbd878bd42cee563c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Walk Back.fbx using Guid(ac6c484c38094c1fbd878bd42cee563c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'a454c0515cec72eafd07708c9f81a8d6') in 0.023897 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
-========================================================================
-Received Import Request.
-  Time since last request: 0.350925 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Walk Forward.fbx
-  artifactKey: Guid(23cff8f83af84833a348bac2514ebb70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Walk Forward.fbx using Guid(23cff8f83af84833a348bac2514ebb70) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '02374e0353f5f8324ba2527b3b79e75a') in 0.026113 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
-========================================================================
-Received Import Request.
-  Time since last request: 0.591656 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Walk Left.fbx
-  artifactKey: Guid(c5d5927f3f5f440592ea60613e7335f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Walk Left.fbx using Guid(c5d5927f3f5f440592ea60613e7335f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '0c7d29ab20a0409f85394f1c793b418b') in 0.023502 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
-========================================================================
-Received Import Request.
-  Time since last request: 0.345626 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Walk Right.fbx
-  artifactKey: Guid(8abc3fc27e0444579abbc3a7414cad97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Walk Right.fbx using Guid(8abc3fc27e0444579abbc3a7414cad97) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'f8db72378f733c024720ac8f7655cad6') in 0.026690 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
-========================================================================
-Received Import Request.
-  Time since last request: 0.122232 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Models/Shark.fbx
-  artifactKey: Guid(8a22601e49204f1f9ef5eed945d3d807) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Models/Shark.fbx using Guid(8a22601e49204f1f9ef5eed945d3d807) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'fb6a0860d6e81020c4824e42373f8620') in 0.026778 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 80
-========================================================================
-Received Import Request.
-  Time since last request: 0.814350 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Idle.fbx
-  artifactKey: Guid(3654b41718784e83b48f6bc53487c4a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Idle.fbx using Guid(3654b41718784e83b48f6bc53487c4a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '7cc936963b0d1c7320a2e71260af08dd') in 0.024048 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
-========================================================================
-Received Import Request.
-  Time since last request: 0.343940 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Run Back.fbx
-  artifactKey: Guid(eefa4ac0650e464fac877e28347e771a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Run Back.fbx using Guid(eefa4ac0650e464fac877e28347e771a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '84a1f8a02eed5a57527bb0a177c3df35') in 0.025258 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
-========================================================================
-Received Import Request.
-  Time since last request: 2.244603 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Grab.fbx
-  artifactKey: Guid(b1e7900496a7473fadcd86c70c837cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Grab.fbx using Guid(b1e7900496a7473fadcd86c70c837cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '2700bc1dabf5ff21003c759e5455316d') in 0.028561 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
-========================================================================
-Received Import Request.
-  Time since last request: 0.132963 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark
-  artifactKey: Guid(e4f3553a650348b2b8b55132a2b75dbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark using Guid(e4f3553a650348b2b8b55132a2b75dbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'b98d89aac619752829c3bc6054b0f3f3') in 0.000415 seconds
+  Time since last request: 7.038175 seconds.
+  path: Assets/__forSubmit/MetaverseScene_Main 1.unity
+  artifactKey: Guid(a20a73eb34d154d1285b473e15f8483e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__forSubmit/MetaverseScene_Main 1.unity using Guid(a20a73eb34d154d1285b473e15f8483e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+ -> (artifact id: '3ad07d67fa13a1cc7dcfe493ab795553') in 0.000678 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.377372 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Attack.fbx
-  artifactKey: Guid(169032d7b12148edba077738c3faa4b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Attack.fbx using Guid(169032d7b12148edba077738c3faa4b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '4701984be14ff468efe6979c11ac98be') in 0.026431 seconds
+  Time since last request: 8.168273 seconds.
+  path: Assets/__forSubmit/MetaverseScene_Main_0916.unity
+  artifactKey: Guid(a20a73eb34d154d1285b473e15f8483e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__forSubmit/MetaverseScene_Main_0916.unity using Guid(a20a73eb34d154d1285b473e15f8483e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+ -> (artifact id: '62c35715e9a388bf852fe9c1562c2744') in 0.000394 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
+Number of asset objects unloaded after import = 0
+[usbmuxd] Detached: 4 00008110-00160D963C32801E
+[usbmuxd] Attached: 5 00008020-0011042214F9002E
 ========================================================================
 Received Import Request.
-  Time since last request: 0.146034 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Dying.fbx
-  artifactKey: Guid(192cd1593c544c9fab88ed3075341d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Dying.fbx using Guid(192cd1593c544c9fab88ed3075341d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'fe1b7f456e6f84abd87809aa14aefa16') in 0.025843 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
-========================================================================
-Received Import Request.
-  Time since last request: 0.320096 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Hiding.fbx
-  artifactKey: Guid(a73cd486590f49b9978adab432940222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Hiding.fbx using Guid(a73cd486590f49b9978adab432940222) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'f63c1a6d425a769a7eb2938c0bc82caf') in 0.027672 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
-========================================================================
-Received Import Request.
-  Time since last request: 0.130040 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Hello.fbx
-  artifactKey: Guid(dcae0c848cc34a2f92af67a88f429301) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Hello.fbx using Guid(dcae0c848cc34a2f92af67a88f429301) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '4171008705589d4b44b5856c2b592dde') in 0.021842 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
-========================================================================
-Received Import Request.
-  Time since last request: 0.139776 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Dance.fbx
-  artifactKey: Guid(272ffe94272c47d6a1c42c403e2cc339) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Dance.fbx using Guid(272ffe94272c47d6a1c42c403e2cc339) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '63ae0094973333f1ba9c00cc4ba732c2') in 0.027550 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
-========================================================================
-Received Import Request.
-  Time since last request: 0.498916 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Combat Idle.fbx
-  artifactKey: Guid(5fa81e56b6b843528fd36f4cb0dfe437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Combat Idle.fbx using Guid(5fa81e56b6b843528fd36f4cb0dfe437) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '92837f9ca777ebcadffd28b2918b549c') in 0.022976 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
-========================================================================
-Received Import Request.
-  Time since last request: 0.150731 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Prefabs/Shark A.prefab
-  artifactKey: Guid(f7961dc032be46efad413a31d4fbae4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Prefabs/Shark A.prefab using Guid(f7961dc032be46efad413a31d4fbae4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '2a085760a30db97c373861739e315905') in 0.014199 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 81
-========================================================================
-Received Import Request.
-  Time since last request: 0.134338 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Textures/Shark A.png
-  artifactKey: Guid(edd3c32b66ad473183ee2765ed8c1e16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Textures/Shark A.png using Guid(edd3c32b66ad473183ee2765ed8c1e16) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'f7fe677f02d91fd63a898115a23a5e00') in 0.007398 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 46.201927 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Idlev2.fbx
-  artifactKey: Guid(e7fdfdbab31f433b828b8c083ee43a8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Idlev2.fbx using Guid(e7fdfdbab31f433b828b8c083ee43a8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '3e8e45e66f5f3020f1e78898c2f5ade9') in 0.028514 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
-========================================================================
-Received Import Request.
-  Time since last request: 0.722095 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Jump.fbx
-  artifactKey: Guid(4f62a6cff9d2421c91d7cfb47c271629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Shark/Shark Jump.fbx using Guid(4f62a6cff9d2421c91d7cfb47c271629) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'db6281a82e2b572387aa65d7bad6f99b') in 0.019986 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
-========================================================================
-Received Import Request.
-  Time since last request: 136.801452 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Prefabs/Fox B.prefab
-  artifactKey: Guid(8f8e64246390483fa11505c05aff7249) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Prefabs/Fox B.prefab using Guid(8f8e64246390483fa11505c05aff7249) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '0544e31b9af76ab2c6efcfab32da8bd8') in 0.075298 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 97
-========================================================================
-Received Import Request.
-  Time since last request: 3.605232 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Textures/Fox A.png
-  artifactKey: Guid(a7543c3622e64364a992405b2e49865f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Textures/Fox A.png using Guid(a7543c3622e64364a992405b2e49865f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'c372413d8fdb68973d951f071b3ee719') in 0.019932 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.958364 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Fox/Fox Hello.fbx
-  artifactKey: Guid(77a4b2000056482ab4da5b2074233a34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Fox/Fox Hello.fbx using Guid(77a4b2000056482ab4da5b2074233a34) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '700ca76cf1f4c7e994c466d24e5cf3b8') in 0.026707 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
-========================================================================
-Received Import Request.
-  Time since last request: 2.218907 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Fox/Fox Combat Idle.fbx
-  artifactKey: Guid(dc7152b33a0d41f08b1527d69b37384e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Fox/Fox Combat Idle.fbx using Guid(dc7152b33a0d41f08b1527d69b37384e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '3280e566d5d56f7ddffca62e7e5dea0a') in 0.025090 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
-========================================================================
-Received Import Request.
-  Time since last request: 0.199618 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Fox/Fox Grab.fbx
-  artifactKey: Guid(24a8666811ce4621804c70c503d890e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Fox/Fox Grab.fbx using Guid(24a8666811ce4621804c70c503d890e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'e6b72e441a267c6fdc51f0d6b1daf154') in 0.024993 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
-========================================================================
-Received Import Request.
-  Time since last request: 1.381698 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Fox/Fox Combat Attack.fbx
-  artifactKey: Guid(6b33880f094f4e63854880ec6d954591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Fox/Fox Combat Attack.fbx using Guid(6b33880f094f4e63854880ec6d954591) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'a9824d280b7be35a8be2a8bc17b7b6c3') in 0.027852 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
-========================================================================
-Received Import Request.
-  Time since last request: 0.191261 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Fox/Fox Dying.fbx
-  artifactKey: Guid(ad2451e7eeb94948b93014973f51e027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Fox/Fox Dying.fbx using Guid(ad2451e7eeb94948b93014973f51e027) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '069ff1e2ad266fff1e34cd32d1040e35') in 0.026145 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
-========================================================================
-Received Import Request.
-  Time since last request: 1.633528 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Fox/Fox Dance.fbx
-  artifactKey: Guid(c1e00923924d4f5ca0c7e8ac184c6460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Fox/Fox Dance.fbx using Guid(c1e00923924d4f5ca0c7e8ac184c6460) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'f15816c1912ad4f42524dca8c4655560') in 0.028743 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
-========================================================================
-Received Import Request.
-  Time since last request: 0.467115 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Fox
-  artifactKey: Guid(16a30a42fa2c4b7099597dbc50d77991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Fox using Guid(16a30a42fa2c4b7099597dbc50d77991) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '33c944b3e8ceb09ccec3a5c255d33c91') in 0.000455 seconds
+  Time since last request: 5420.955728 seconds.
+  path: Assets/_Dorami/04.Sprites/UI
+  artifactKey: Guid(f7a8a0002a99047549fea48e7171f836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dorami/04.Sprites/UI using Guid(f7a8a0002a99047549fea48e7171f836) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+ -> (artifact id: '1355ac7611f8b8708298808672a48f66') in 0.001206 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.318928 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Fox/Fox Run Back.fbx
-  artifactKey: Guid(8fbd33e45cb84bcb9e88f7ae410fdfc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Fox/Fox Run Back.fbx using Guid(8fbd33e45cb84bcb9e88f7ae410fdfc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '38353a1fb7b80aedd3702264ecb3ed43') in 0.021338 seconds
+  Time since last request: 3.797744 seconds.
+  path: Assets/_Dorami/04.Sprites/ShopUI
+  artifactKey: Guid(f7a8a0002a99047549fea48e7171f836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dorami/04.Sprites/ShopUI using Guid(f7a8a0002a99047549fea48e7171f836) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+ -> (artifact id: 'fc5b6b2ab17171703bee03496d54880d') in 0.000466 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.214202 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Fox/Fox Hiding.fbx
-  artifactKey: Guid(9cbb3bc2bd3340548dde956531607315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Fox/Fox Hiding.fbx using Guid(9cbb3bc2bd3340548dde956531607315) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '0d8baf41b2e0ae48db77fdc9a81886c2') in 0.022254 seconds
+  Time since last request: 55.495145 seconds.
+  path: Assets/_Dorami/04.Sprites/ShopUI/CueClyp
+  artifactKey: Guid(55cff8926ecc14e7b9839670175fe875) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dorami/04.Sprites/ShopUI/CueClyp using Guid(55cff8926ecc14e7b9839670175fe875) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+ -> (artifact id: '3b16933d1ea3861954caf735cdcb5e00') in 0.000808 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 2.122448 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Fox/Fox Walk Right.fbx
-  artifactKey: Guid(17eeac8ac8504686b36039b907cf80ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Fox/Fox Walk Right.fbx using Guid(17eeac8ac8504686b36039b907cf80ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'c2dde7777575e342559b8122ec82c338') in 0.026654 seconds
+  Time since last request: 10.331865 seconds.
+  path: Assets/_Dorami/04.Sprites/ShopUI/Recode
+  artifactKey: Guid(ff1b11fa31b75466f9d744462d047cfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dorami/04.Sprites/ShopUI/Recode using Guid(ff1b11fa31b75466f9d744462d047cfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+ -> (artifact id: 'd15030631116a0c0481dc5a6abc019fb') in 0.000528 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.488486 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Fox/Fox Walk Left.fbx
-  artifactKey: Guid(288907dd031d43adb44802f87f60bc06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Fox/Fox Walk Left.fbx using Guid(288907dd031d43adb44802f87f60bc06) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '949fba20e8110a14c1619f1765387130') in 0.025497 seconds
+  Time since last request: 10.108132 seconds.
+  path: Assets/_Dorami/04.Sprites/ShopUI/Overlab
+  artifactKey: Guid(23235ab77e5eb4b15ba941669b86b455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dorami/04.Sprites/ShopUI/Overlab using Guid(23235ab77e5eb4b15ba941669b86b455) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+ -> (artifact id: '59484340362f199349c5a611da4ae6dd') in 0.000522 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.739905 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Fox/Fox Walk Back.fbx
-  artifactKey: Guid(c3ebff59619947989b7d89b20f77fa41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Fox/Fox Walk Back.fbx using Guid(c3ebff59619947989b7d89b20f77fa41) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+  Time since last request: 10.899432 seconds.
+  path: Assets/_Dorami/04.Sprites/ShopUI/CueClyp/cueclyp_p5.png
+  artifactKey: Guid(b0ecdbcbbd35746cd992a92f958b6c59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dorami/04.Sprites/ShopUI/CueClyp/cueclyp_p5.png using Guid(b0ecdbcbbd35746cd992a92f958b6c59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '0ceb4dc2d227607c4df26671c4e9d5e1') in 0.025129 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
-========================================================================
-Received Import Request.
-  Time since last request: 0.310756 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Fox/Fox Thinking.fbx
-  artifactKey: Guid(db943706001b4fa5b2be11eb12b69ee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Fox/Fox Thinking.fbx using Guid(db943706001b4fa5b2be11eb12b69ee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'b794eede3406c3bbc5675eda9cfcfd3d') in 0.024006 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
-========================================================================
-Received Import Request.
-  Time since last request: 143.085298 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Racoon/Racoon Thinking.fbx
-  artifactKey: Guid(702899f5285a49e2b951ea9659bd6fb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Racoon/Racoon Thinking.fbx using Guid(702899f5285a49e2b951ea9659bd6fb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'ba23c47a4d7446e705b052832e6e4d3e') in 0.058395 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
-========================================================================
-Received Import Request.
-  Time since last request: 0.000433 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Racoon/Racoon Combat Idle.fbx
-  artifactKey: Guid(f5c7301431b14a24b8d943a5446618f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Racoon/Racoon Combat Idle.fbx using Guid(f5c7301431b14a24b8d943a5446618f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'ca0c1fefda6d0433460e961cbbc5b681') in 0.028023 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Models/Bought/03_Toxic/Materials/rain_impact.mat
-  artifactKey: Guid(c76697546db67bb4ba55f3c4b869ad34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Bought/03_Toxic/Materials/rain_impact.mat using Guid(c76697546db67bb4ba55f3c4b869ad34) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'dbb3510965bfacbaa9a187411efd96fd') in 0.013230 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Racoon/Racoon Walk Forward.fbx
-  artifactKey: Guid(64f390f20f474046bbdf0c6445dbb4e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Racoon/Racoon Walk Forward.fbx using Guid(64f390f20f474046bbdf0c6445dbb4e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'f4d8de1bc65d932c8ef02a7b4206b1c6') in 0.021380 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Materials/Racoon B.mat
-  artifactKey: Guid(058d559df2154f7eb24eb3103b47153d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Materials/Racoon B.mat using Guid(058d559df2154f7eb24eb3103b47153d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'a04cfe83b5c06989df757d4c43c508fb') in 0.010182 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Racoon/Racoon Walk Right.fbx
-  artifactKey: Guid(5571d3f03f2c4537919d25b7db8313d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Racoon/Racoon Walk Right.fbx using Guid(5571d3f03f2c4537919d25b7db8313d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '680f2527954e83433a9047575bf8c93c') in 0.019714 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset
-  artifactKey: Guid(5302535af1044152a457ed104f1f4b91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset using Guid(5302535af1044152a457ed104f1f4b91) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '438a5e7e580bfc3bac1378bdd974e6ac') in 0.030369 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Racoon/Racoon Walk Left.fbx
-  artifactKey: Guid(60ebfcff92764df29710d8447a072465) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Racoon/Racoon Walk Left.fbx using Guid(60ebfcff92764df29710d8447a072465) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'f93b08b254231d9c3aada76b897173d8') in 0.021439 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Models/Bought/03_Toxic/Materials/Rock.mat
-  artifactKey: Guid(c7323c652ffb4124bb9ce320bced14dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Bought/03_Toxic/Materials/Rock.mat using Guid(c7323c652ffb4124bb9ce320bced14dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'cc47cf32c822a6349999b9f5558cf366') in 0.013341 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4
-========================================================================
-Received Import Request.
-  Time since last request: 0.000077 seconds.
-  path: Assets/Models/Bought/03_Toxic/Materials/rain.mat
-  artifactKey: Guid(7a52ed6262ac2fa4892edca760056f4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Bought/03_Toxic/Materials/rain.mat using Guid(7a52ed6262ac2fa4892edca760056f4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '9c44f47a2c15dfdac894247c5dc41604') in 0.010086 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4
-========================================================================
-Received Import Request.
-  Time since last request: 0.000063 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Materials/Racoon A.mat
-  artifactKey: Guid(df90de1b1c7844c9903388c2f0962415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Materials/Racoon A.mat using Guid(df90de1b1c7844c9903388c2f0962415) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '8ae33dc8ecfe7ba0620569001a78edea') in 0.007713 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.591013 seconds.
-  path: Assets/Models/Bought/03_Toxic/Materials/ToxicWaterPipe.mat
-  artifactKey: Guid(0007c2cf416e8044ea1ed68243334dab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Bought/03_Toxic/Materials/ToxicWaterPipe.mat using Guid(0007c2cf416e8044ea1ed68243334dab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '972a088af32ced8089a2eec60d09e642') in 0.017708 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 0.000088 seconds.
-  path: Assets/Models/Bought/03_Toxic/Materials/Truck.mat
-  artifactKey: Guid(cd31b097fd3a51b4990f162c9c3082dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Bought/03_Toxic/Materials/Truck.mat using Guid(cd31b097fd3a51b4990f162c9c3082dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '825abb1641937231de4cd840b9ceb7dc') in 0.015448 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/_Dorami/02.Mats/warned.mat
-  artifactKey: Guid(44af276b0ccde49bf9a7a7037b326ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/02.Mats/warned.mat using Guid(44af276b0ccde49bf9a7a7037b326ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'd114d75b8097e3fa8448859d6a9ab54f') in 0.007216 seconds
+ -> (artifact id: '26d7ecdaece69c70e32e8b7cadd0c752') in 0.096333 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000237 seconds.
-  path: Assets/Models/Bought/03_Toxic/Materials/WaterFall.mat
-  artifactKey: Guid(2423ac7c7f56b1542a6d866ea8f6944a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Bought/03_Toxic/Materials/WaterFall.mat using Guid(2423ac7c7f56b1542a6d866ea8f6944a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+  Time since last request: 9.046050 seconds.
+  path: Assets/_Dorami/04.Sprites/ShopUI/Overlab/overlab_p5.png
+  artifactKey: Guid(c5d4e632c38fe470d89f9463a17e1c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dorami/04.Sprites/ShopUI/Overlab/overlab_p5.png using Guid(c5d4e632c38fe470d89f9463a17e1c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '944d1c714f2608d95baca3b4b56c90e6') in 0.012205 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4
-========================================================================
-Received Import Request.
-  Time since last request: 0.149468 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Racoon/Racoon Grab.fbx
-  artifactKey: Guid(77b727209b564ea0bc7ef6a9ec7ee8b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Racoon/Racoon Grab.fbx using Guid(77b727209b564ea0bc7ef6a9ec7ee8b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'fdee2aa5dee62ecf1400e86bf810a3f8') in 0.024506 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
-========================================================================
-Received Import Request.
-  Time since last request: 1.422597 seconds.
-  path: Assets/Hovl Studio/Magic effects pack/Materials/Crack.mat
-  artifactKey: Guid(d8bfd8e382dd58d4c8367e59434e8dd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hovl Studio/Magic effects pack/Materials/Crack.mat using Guid(d8bfd8e382dd58d4c8367e59434e8dd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '2d7b93057436c36b0a67fec2241c9dd2') in 0.016812 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000115 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Racoon/Racoon Run Forward.fbx
-  artifactKey: Guid(f62c18b4050e452483f159cdfc614550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Racoon/Racoon Run Forward.fbx using Guid(f62c18b4050e452483f159cdfc614550) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '0f1b5689b9203f1bdc143a15aa69680e') in 0.024100 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Racoon/Racoon Idle.fbx
-  artifactKey: Guid(1e7fd408317e4b1d82ef81ebfa888797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Racoon/Racoon Idle.fbx using Guid(1e7fd408317e4b1d82ef81ebfa888797) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '6de7a7b8c418b1b2cdea7b13b0e7ce43') in 0.020129 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Racoon/Racoon Dying.fbx
-  artifactKey: Guid(661f602f86a84e839dec2649a127dd0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Racoon/Racoon Dying.fbx using Guid(661f602f86a84e839dec2649a127dd0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'a10c184e9cbe14eaaf36958f32bf5da2') in 0.017853 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Racoon/Racoon Run Back.fbx
-  artifactKey: Guid(c46f723102e1464f98f114e80be8eb81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Racoon/Racoon Run Back.fbx using Guid(c46f723102e1464f98f114e80be8eb81) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '61798b8a03a890cda4bc40adc7e4e53f') in 0.017096 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Racoon/Racoon Idlev2.fbx
-  artifactKey: Guid(f2f89990a8874d70a52b3b70f69656ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Animations/Racoon/Racoon Idlev2.fbx using Guid(f2f89990a8874d70a52b3b70f69656ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '5beea067cb7ca9ee931cd3e5a1c88165') in 0.019087 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
-========================================================================
-Received Import Request.
-  Time since last request: 76.533961 seconds.
-  path: Assets/_Dorami/03.Models/Cute Humanoid Animals/Materials/Shark A.mat
-  artifactKey: Guid(4a72767c65774f7a847f70076ccbd2f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Dorami/03.Models/Cute Humanoid Animals/Materials/Shark A.mat using Guid(4a72767c65774f7a847f70076ccbd2f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'd18051a3e56198ab70a24516bd08fb6e') in 0.096236 seconds
+ -> (artifact id: 'cb473324145daab9ad18107bf8389f02') in 0.013078 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000066 seconds.
-  path: Assets/Models/Bought/03_Toxic/Materials/Sign.mat
-  artifactKey: Guid(96fdc0b61bedcc7428f675ff3a09230f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Bought/03_Toxic/Materials/Sign.mat using Guid(96fdc0b61bedcc7428f675ff3a09230f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+  Time since last request: 7.458581 seconds.
+  path: Assets/_Dorami/04.Sprites/ShopUI/Recode/recode_p2.png
+  artifactKey: Guid(10b71f600d0b54266a7794e8be52fe51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dorami/04.Sprites/ShopUI/Recode/recode_p2.png using Guid(10b71f600d0b54266a7794e8be52fe51) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'c3f4b35cefefb234bf9bcdac6400e01b') in 0.014824 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 0.929409 seconds.
-  path: Assets/Hovl Studio/Magic effects pack/Materials/Star.mat
-  artifactKey: Guid(f7fb42690dbaf0d408f1f55ea89b7be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hovl Studio/Magic effects pack/Materials/Star.mat using Guid(f7fb42690dbaf0d408f1f55ea89b7be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '7d903c0df40739b6be849f72d6982dce') in 0.014244 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.203245 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
-  artifactKey: Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat using Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'd3c43a82b25da3b5c159e002b8379c47') in 0.075505 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000137 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
-  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: 'd11c6b46307e4a5ad5df4cfb9bd21a49') in 0.013095 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.472648 seconds.
-  path: Assets/Hovl Studio/Magic effects pack/Materials/Additive.mat
-  artifactKey: Guid(32fac6e45890e9d48961b3db7c93c0be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hovl Studio/Magic effects pack/Materials/Additive.mat using Guid(32fac6e45890e9d48961b3db7c93c0be) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '76e9b7d99e9d1b3f4289d04ea0619e65') in 0.016161 seconds
+ -> (artifact id: 'de6f5011c1d366954e0dc8e64f89fa3c') in 0.009478 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000155 seconds.
-  path: Assets/Models/Bought/04_Allsky/Anime/Anime Night/Anime Night Equirect.mat
-  artifactKey: Guid(2e69d5cbae7734b4f9c3af033f53c7f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Bought/04_Allsky/Anime/Anime Night/Anime Night Equirect.mat using Guid(2e69d5cbae7734b4f9c3af033f53c7f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+  Time since last request: 147.623254 seconds.
+  path: Assets/_Dorami/04.Sprites/ShopUI/Recode/recode_b.png
+  artifactKey: Guid(76bc44467fc634e9c98fe8a78d4f2ebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dorami/04.Sprites/ShopUI/Recode/recode_b.png using Guid(76bc44467fc634e9c98fe8a78d4f2ebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
- -> (artifact id: '8361b841c67be141d395978cb762e6ec') in 0.007324 seconds
+ -> (artifact id: '333d4d8e62f0ed476b45481c1807439a') in 0.024516 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
-[usbmuxd] Detached: 2 00008110-00160D963C32801E
+========================================================================
+Received Import Request.
+  Time since last request: 2.988271 seconds.
+  path: Assets/_Dorami/04.Sprites/ShopUI/Recode/recode_logo.png
+  artifactKey: Guid(4042f7c04b6be426ebd00677804193c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dorami/04.Sprites/ShopUI/Recode/recode_logo.png using Guid(4042f7c04b6be426ebd00677804193c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+ -> (artifact id: 'a0bf6449d9b2c593f5bb849ec9365bf1') in 0.012166 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 3.445149 seconds.
+  path: Assets/_Dorami/04.Sprites/ShopUI/Recode/recode_logo.png
+  artifactKey: Guid(4042f7c04b6be426ebd00677804193c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dorami/04.Sprites/ShopUI/Recode/recode_logo.png using Guid(4042f7c04b6be426ebd00677804193c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+ -> (artifact id: 'fa1d9a4bbff671ffdaac94034bd84412') in 0.111783 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.458841 seconds.
+  path: Assets/_Dorami/04.Sprites/ShopUI/CueClyp/cueclyp_b.png
+  artifactKey: Guid(f89014dfc5a2b4335b254b321c3e427b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dorami/04.Sprites/ShopUI/CueClyp/cueclyp_b.png using Guid(f89014dfc5a2b4335b254b321c3e427b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+ -> (artifact id: 'accec52cec9e065d84e3b90514c9aeeb') in 0.035826 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.875412 seconds.
+  path: Assets/_Dorami/04.Sprites/ShopUI/CueClyp/cueclyp_p6.png
+  artifactKey: Guid(6fa3dce893ae8439da4c15bac657250d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dorami/04.Sprites/ShopUI/CueClyp/cueclyp_p6.png using Guid(6fa3dce893ae8439da4c15bac657250d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+ -> (artifact id: 'af311e249cbfc5306a48b363159415e6') in 0.005906 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 7.782720 seconds.
+  path: Assets/_Dorami/04.Sprites/ShopUI/CueClyp/cueclyp_p6.png
+  artifactKey: Guid(6fa3dce893ae8439da4c15bac657250d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dorami/04.Sprites/ShopUI/CueClyp/cueclyp_p6.png using Guid(6fa3dce893ae8439da4c15bac657250d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+ -> (artifact id: 'a8f65132d0e617424d2a23ec50b1a6db') in 0.035445 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.129603 seconds.
+  path: Assets/_Dorami/04.Sprites/ShopUI/Overlab/overlab_b.png
+  artifactKey: Guid(de35218b90af44314a6855d269bf5fda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dorami/04.Sprites/ShopUI/Overlab/overlab_b.png using Guid(de35218b90af44314a6855d269bf5fda) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+ -> (artifact id: '8a10e061acfd949e2f24907ad5b2d930') in 0.015809 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.158706 seconds.
+  path: Assets/_Dorami/04.Sprites/ShopUI/Overlab/overlab_p7.png
+  artifactKey: Guid(54d7c6b7c324845c5ad0f5a6055f7313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dorami/04.Sprites/ShopUI/Overlab/overlab_p7.png using Guid(54d7c6b7c324845c5ad0f5a6055f7313) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+ -> (artifact id: '39afc47c5efb122b2aa974c1fc43cd60') in 0.020450 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 4.697944 seconds.
+  path: Assets/_Dorami/04.Sprites/ShopUI/Overlab/overlab_p7.png
+  artifactKey: Guid(54d7c6b7c324845c5ad0f5a6055f7313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dorami/04.Sprites/ShopUI/Overlab/overlab_p7.png using Guid(54d7c6b7c324845c5ad0f5a6055f7313) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+ -> (artifact id: '51811802958af0c74beac4b2e95709bd') in 0.020238 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 144.234491 seconds.
+  path: Assets/_Dorami/04.Sprites/ShopUI/Recode/recode_logo.png
+  artifactKey: Guid(4042f7c04b6be426ebd00677804193c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dorami/04.Sprites/ShopUI/Recode/recode_logo.png using Guid(4042f7c04b6be426ebd00677804193c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+ -> (artifact id: '0ee1847ff322fc637966a9e94836063d') in 0.050303 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 4.922656 seconds.
+  path: Assets/_Dorami/04.Sprites/ShopUI/Recode/recode_logo.png
+  artifactKey: Guid(4042f7c04b6be426ebd00677804193c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dorami/04.Sprites/ShopUI/Recode/recode_logo.png using Guid(4042f7c04b6be426ebd00677804193c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+ -> (artifact id: '2e02e500eb321479b411f89e05943fae') in 0.017215 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x29a487000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.408 seconds
+Refreshing native plugins compatible for Editor in 0.95 ms, found 2 plugins.
+Native extension for iOS target not found
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.880 seconds
+Domain Reload Profiling: 1288ms
+	BeginReloadAssembly (111ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (55ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (13ms)
+	LoadAllAssembliesAndSetupDomain (258ms)
+		LoadAssemblies (252ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (37ms)
+			TypeCache.Refresh (14ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (15ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (880ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (272ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (46ms)
+			ProcessInitializeOnLoadAttributes (179ms)
+			ProcessInitializeOnLoadMethodAttributes (29ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 1.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5477 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 56 unused Assets / (429.1 KB). Loaded Objects now: 6171.
+Memory consumption went from 219.8 MB to 219.4 MB.
+Total: 2.643833 ms (FindLiveObjects: 0.183584 ms CreateObjectMapping: 0.053750 ms MarkObjects: 2.251167 ms  DeleteObjects: 0.154916 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
