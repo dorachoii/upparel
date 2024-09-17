@@ -496,6 +496,8 @@
 "Assets/_Dorami/01.Scripts/LoadingBar.cs"
 "Assets/_Dorami/01.Scripts/Login.cs"
 "Assets/_Dorami/01.Scripts/Money.cs"
+"Assets/_Dorami/01.Scripts/NetworkManager.cs"
+"Assets/_Dorami/01.Scripts/NetworkManagerRPC.cs"
 "Assets/_Dorami/01.Scripts/PlayerCamera.cs"
 "Assets/_Dorami/01.Scripts/PlayerMove.cs"
 "Assets/_Dorami/01.Scripts/Pollution.cs"

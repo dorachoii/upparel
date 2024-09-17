@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Photon.Pun;
+using Photon.Realtime;
 
-public class PlayerMove : MonoBehaviour
+public class PlayerMove :  MonoBehaviourPunCallbacks
 {
     public static PlayerMove Instance;
 
@@ -20,6 +22,10 @@ public class PlayerMove : MonoBehaviour
     public Animator animator;
     public float rotationSpeed = 1.0f; // 회전 속도
 
+
+    public PhotonView PV;
+    
+
     void Awake()
     {
         Instance = this;
@@ -29,7 +35,9 @@ public class PlayerMove : MonoBehaviour
 
     void Update()
     {
-        isGrounded = cc.isGrounded;
+         if(PV.IsMine)// Control Local이 true라면
+        {
+            isGrounded = cc.isGrounded;
 
         if (isGrounded && playerVelocity.y < 0)
         {
@@ -60,6 +68,7 @@ public class PlayerMove : MonoBehaviour
         
         playerVelocity.y += gravityValue * Time.deltaTime;
         cc.Move(playerVelocity * Time.deltaTime);
+        }
     }
 
     private void OnEnable()
@@ -113,3 +122,5 @@ public class PlayerMove : MonoBehaviour
 }
 
 }
+
+
