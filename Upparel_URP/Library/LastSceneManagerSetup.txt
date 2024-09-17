@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/__forSubmit/Login_DH_Edit.unity
+- path: Assets/__forSubmit/MetaverseScene_Main_0916.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
