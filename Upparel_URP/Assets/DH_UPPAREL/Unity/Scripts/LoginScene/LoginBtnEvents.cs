@@ -80,7 +80,7 @@ public class LoginBtnEvents : MonoBehaviour
         
         Debug.Log(email);
         Debug.Log(password);
-        HttpRequest req = new HttpRequestBuilder().Uri("member/login")
+        HttpRequest req = new HttpRequestBuilder().Path("member/login")
             .Headers(new List<KeyValue<string, string>> {
                 //new KeyValue<string, string>("Content-Type", "application/json; charset=utf-8")
             })
@@ -167,7 +167,7 @@ public class LoginBtnEvents : MonoBehaviour
         string json = JsonUtility.ToJson(vo);
         Debug.Log(json);
         //web request
-        HttpRequest req = new HttpRequestBuilder().Uri("member/checkAccount")
+        HttpRequest req = new HttpRequestBuilder().Path("member/checkAccount")
             .Headers(new List<KeyValue<string, string>> {
                 new KeyValue<string, string>("Content-Type", "application/json; charset=utf-8")
             })
@@ -210,7 +210,7 @@ public class LoginBtnEvents : MonoBehaviour
             uri = "member/maker/register";
         member.character = CharButton.currentBtn.type.ToString();
         string json = JsonUtility.ToJson(member);
-        HttpRequest req = new HttpRequestBuilder().Uri(uri)
+        HttpRequest req = new HttpRequestBuilder().Path(uri)
             .Headers(new List<KeyValue<string, string>> {
                 new KeyValue<string, string>("Content-Type", "application/json; charset=utf-8")
             })
