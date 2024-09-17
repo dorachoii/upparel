@@ -126,7 +126,7 @@ public class LoginView : UINode
             string email = field_c_email.text;
             string password = field_c_password.text;
 
-            HttpRequest req = new HttpRequestBuilder().Uri("member/login")
+            HttpRequest req = new HttpRequestBuilder().Path("member/login")
             .ReqHandler((webreq) => {
                 ResponseDTO<MemberVO> responseDTO = JsonUtility.FromJson<ResponseDTO<MemberVO>>(webreq.downloadHandler.text);
                 print(responseDTO.results.nickname);
@@ -142,7 +142,7 @@ public class LoginView : UINode
         {
             string email = field_b_email.text;
             string password = field_b_password.text;
-            HttpRequest req = new HttpRequestBuilder().Uri("member/login")
+            HttpRequest req = new HttpRequestBuilder().Path("member/login")
                 .ReqHandler((webreq) =>
                 {
                     onSuccess_B_Login?.Invoke();

@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 
-//¸Ş¸ğ¸®¿¡ ¿Ã·Á¼­ ´Ù¸¥ °´Ã¼µéÀÌ ÆíÇÏ°Ô HTTP ¿äÃ»À» ÁøÇàÇÒ ¼ö ÀÖµµ·Ï ÇÏ´Â ¸ñÀûÀÎ µµ¿ì¹Ì Å¬·¡½º
+//ë©”ëª¨ë¦¬ì— ì˜¬ë ¤ì„œ ë‹¤ë¥¸ ê°ì²´ë“¤ì´ í¸í•˜ê²Œ HTTP ìš”ì²­ì„ ì§„í–‰í•  ìˆ˜ ìˆë„ë¡ í•˜ëŠ” ëª©ì ì¸ ë„ìš°ë¯¸ í´ë˜ìŠ¤
 public class HttpManager
 {
-    public static string defaultAddress = "http://192.168.0.102:8000";
+    public static string defaultAddress = "http://220.81.236.97:8000";
     public Dictionary<string,string> address = new Dictionary<string, string>();
     public string token;
 
-    //·Î±×ÀÎ »óÅÂ¸¦ À¯ÁöÇÏ±â À§ÇØ ÅäÅ«À» ÀúÀåÇÑ´Ù..
+    //ë¡œê·¸ì¸ ìƒíƒœë¥¼ ìœ ì§€í•˜ê¸° ìœ„í•´ í† í°ì„ ì €ì¥í•œë‹¤..
     public static void SaveToken()
     {
         

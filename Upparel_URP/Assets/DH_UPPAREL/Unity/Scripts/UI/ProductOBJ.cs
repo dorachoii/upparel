@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ProductOBJ : MonoBehaviour
 {
     ProductVO product = new ProductVO();
-    //ÀÚ½ÅÀÌ °¡Áö°í ÀÖ´Â UI °´Ã¼µé 
+    //ï¿½Ú½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ UI ï¿½ï¿½Ã¼ï¿½ï¿½ 
     public TMP_Text name_text;
     public TMP_Text price_text;
     public RawImage img;
@@ -16,7 +16,7 @@ public class ProductOBJ : MonoBehaviour
         price_text.text = product.price.ToString();
 
         HttpRequest req = new HttpRequestBuilder()
-            .Uri("file")
+            .Path("file")
             .ReqHandler((webreq)=> {
                 byte[] fileByte = webreq.downloadHandler.data;
                 Texture2D texture = new Texture2D(0, 0);

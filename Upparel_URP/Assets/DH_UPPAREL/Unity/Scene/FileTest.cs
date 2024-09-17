@@ -10,7 +10,7 @@ public class FileTest : MonoBehaviour
     void Start()
     {
         HttpRequest req = new HttpRequestBuilder()
-            .Uri("file")
+            .Path("file")
             .ReqHandler((req)=> {
                 byte[] bytes = req.downloadHandler.data;
                 Texture2D tex = new Texture2D(0, 0);

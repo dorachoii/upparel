@@ -11,7 +11,7 @@ public class TestPRoduct : MonoBehaviour
     {
 
         HttpRequest req = new HttpRequestBuilder()
-            .Uri("market/product/read-products")
+            .Path("market/product/read-products")
             .ReqHandler((webreq)=> {
                 string data = webreq.downloadHandler.text;
                 ResponseDTO<ProductsWrapperVO> dto = JsonUtility.FromJson<ResponseDTO<ProductsWrapperVO>>(data);

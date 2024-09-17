@@ -52,7 +52,7 @@ public class Test : MonoBehaviour
         Instance.SendRequest(Post(req, form));*/
 
         HttpRequest req = new HttpRequestBuilder()
-            .Uri("member/response")
+            .Path("member/response")
             .build();
         Instance.SendRequest(Get(req, ""));
 

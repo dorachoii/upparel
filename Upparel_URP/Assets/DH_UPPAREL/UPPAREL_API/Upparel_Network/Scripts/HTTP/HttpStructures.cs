@@ -12,27 +12,28 @@ public enum ContentType
 }
 public class HttpRequest
 {
-    //¿äÃ»¿¡ ÇÊ¿äÇÑ ±¸Á¶
-    public string address;
-    public string uri;
+    public static string defaultAddress;
+    //ìš”ì²­ì— í•„ìš”í•œ êµ¬ì¡°
+    public string host;
+    public string path;
     public RequestType type;
     public List<KeyValue<string, string>> headers = new List<KeyValue<string, string>>();
     public string body;
     public Action<DownloadHandler> successHandler;
     public Action failureHandler;
-    public Action lodingHandler; //¿äÃ»ÀÌ ·ÎµùÁßÀÏ¶§µµ Æ÷ÇÔµÇ¾î¾ß ÇÑ´Ù..  ÄÚ·çÆ¾ VS ÇÔ¼ö....¾î¶²°Ô ³ªÀ»·Á³ª..? ÀÏ´Ü ÇÔ¼ö·Î °áÁ¤
+    public Action lodingHandler; //ìš”ì²­ì´ ë¡œë”©ì¤‘ì¼ë•Œë„ í¬í•¨ë˜ì–´ì•¼ í•œë‹¤..  ì½”ë£¨í‹´ VS í•¨ìˆ˜....ì–´ë–¤ê²Œ ë‚˜ì„ë ¤ë‚˜..? ì¼ë‹¨ í•¨ìˆ˜ë¡œ ê²°ì •
     public Action<UnityWebRequest> reqHandler;
 }
-//Builder ÆĞÅÏ(Àß¸ø¸¸µë ¤»¤»_)
+//Builder íŒ¨í„´(ì˜ëª»ë§Œë“¬ ã…‹ã…‹_)
 /// <summary>
 /// default paramater : Uri, Type
 /// </summary>
 public class HttpRequestBuilder
 {
     HttpRequest myReq = new HttpRequest();
-    public HttpRequestBuilder Uri(string uri)
+    public HttpRequestBuilder Path(string uri)
     {
-        myReq.uri = uri;
+        myReq.path = uri;
         return this;
     }
     public HttpRequestBuilder Type(RequestType type)
@@ -76,7 +77,7 @@ public class HttpRequestBuilder
     }
 }
 
-//¾²±â ºÒÆíÇØ¼­ ±×³É ¸¸µë
+//ì“°ê¸° ë¶ˆí¸í•´ì„œ ê·¸ëƒ¥ ë§Œë“¬
 public struct KeyValue<KEY, VALUE>
 {
     public KEY key;
