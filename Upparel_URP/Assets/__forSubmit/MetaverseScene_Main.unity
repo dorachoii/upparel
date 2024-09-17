@@ -216,7 +216,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!136 &13552260
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -25681,7 +25681,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1244870310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36466,7 +36466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfb95ae7325cb425a931c92ab4c80a5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 1703234185}
   flickerInterval: 0.5
 --- !u!1 &1706169387
 GameObject:

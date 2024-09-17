@@ -460,6 +460,7 @@
 "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs"
 "Assets/_Dorami/01.Scripts/Blur.cs"
+"Assets/_Dorami/01.Scripts/CharacterSelection.cs"
 "Assets/_Dorami/01.Scripts/Donation.cs"
 "Assets/_Dorami/01.Scripts/Flicker.cs"
 "Assets/_Dorami/01.Scripts/InteractableItem.cs"

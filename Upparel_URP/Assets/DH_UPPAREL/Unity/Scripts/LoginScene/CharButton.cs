@@ -13,6 +13,14 @@ public class CharButton : MonoBehaviour ,IPointerClickHandler
     public Action OnEnable;
 
     public static Action EnableChar;
+
+    public int characterIndex;
+    public int selectedCharacterIndex = -1;
+
+    /// <summary>
+    /// Awake is called when the script instance is being loaded.
+    /// </summary>
+
     public void Enable()
     {
         OnEnable?.Invoke();
@@ -24,6 +32,7 @@ public class CharButton : MonoBehaviour ,IPointerClickHandler
         if(background)
             background.gameObject.SetActive(true);
         EnableChar?.Invoke();
+        CharacterSelection.instance.SetSelectedCharacterIndex(characterIndex);
     }
     public void Disable()
     {
@@ -34,4 +43,6 @@ public class CharButton : MonoBehaviour ,IPointerClickHandler
     {
         Enable();
     }
+
+
 }
