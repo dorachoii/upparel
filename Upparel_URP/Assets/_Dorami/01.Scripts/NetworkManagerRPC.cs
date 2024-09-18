@@ -20,6 +20,7 @@ public class NetworkManagerRPC : MonoBehaviourPunCallbacks
    public override void OnJoinedRoom() 
    {
         // 3. 방에 들어가면 동기화할 물체Prefab을 생성한다.
+        // 여기에 선택된 캐릭터 정보를 넘겨줘야 함!
         PhotonNetwork.Instantiate("Player", new Vector3(0,1,0), Quaternion.identity);
    }
 }

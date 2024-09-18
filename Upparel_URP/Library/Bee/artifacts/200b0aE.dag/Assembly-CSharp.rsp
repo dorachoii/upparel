@@ -500,6 +500,7 @@
 "Assets/_Dorami/01.Scripts/NetworkManagerRPC.cs"
 "Assets/_Dorami/01.Scripts/PlayerCamera.cs"
 "Assets/_Dorami/01.Scripts/PlayerMove.cs"
+"Assets/_Dorami/01.Scripts/PlayerState.cs"
 "Assets/_Dorami/01.Scripts/Pollution.cs"
 "Assets/_Dorami/01.Scripts/SceneManager2.cs"
 "Assets/_Dorami/01.Scripts/SceneManager3.cs"
