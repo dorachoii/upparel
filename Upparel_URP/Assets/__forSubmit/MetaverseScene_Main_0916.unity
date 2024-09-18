@@ -14384,6 +14384,8 @@ GameObject:
   - component: {fileID: 856436821}
   - component: {fileID: 856436824}
   - component: {fileID: 856436825}
+  - component: {fileID: 856436827}
+  - component: {fileID: 856436826}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -14523,6 +14525,45 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &856436826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856436820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 1
+  m_UseLocal: 1
+--- !u!114 &856436827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856436820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 856436826}
+  sceneViewId: 2
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &857586701
 GameObject:
   m_ObjectHideFlags: 0
@@ -25775,6 +25816,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2804467281366157463}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1458232986 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1087831767755346034, guid: 19e1455c0070b482c92f62bee9ad3664,
+    type: 3}
+  m_PrefabInstance: {fileID: 2804467281366157463}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458232985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1458232992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25789,6 +25842,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currState: 0
   animator: {fileID: 1473917318}
+  PV: {fileID: 1458232986}
 --- !u!1001 &1463458774
 PrefabInstance:
   m_ObjectHideFlags: 0

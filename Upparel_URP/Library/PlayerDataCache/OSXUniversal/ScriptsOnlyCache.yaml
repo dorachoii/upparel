@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp:
     - PlayerMove
+    - PlayerState
     Assembly-CSharp-firstpass.dll:
     - DG.Tweening.DOTweenAnimation
     Assembly-CSharp.dll:
@@ -15,6 +16,7 @@ ScriptsOnlyBuild:
     - NetworkManger
     - PlayerCamera
     - PlayerMove
+    - PlayerState
     - Tutorials
     - UIManager
     - VirtualButton
@@ -831,6 +833,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 135514}
     - Class: 114
       Script: {instanceID: 135516}
+    - Class: 114
+      Script: {instanceID: 509036}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -4264,6 +4268,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: f0ed7906a19d65e72dff72149387717f
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayerState
   platform: 2
   scenePathNames:
   - Assets/__forSubmit/MetaverseScene_Main.unity
