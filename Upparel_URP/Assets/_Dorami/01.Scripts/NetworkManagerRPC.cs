@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
+using Unity.Mathematics;
 
 public class NetworkManagerRPC : MonoBehaviourPunCallbacks
 {
@@ -21,6 +22,6 @@ public class NetworkManagerRPC : MonoBehaviourPunCallbacks
    {
         // 3. 방에 들어가면 동기화할 물체Prefab을 생성한다.
         // 여기에 선택된 캐릭터 정보를 넘겨줘야 함!
-        PhotonNetwork.Instantiate("Player", new Vector3(0,1,0), Quaternion.identity);
+        PhotonNetwork.Instantiate("Player", new Vector3(0, 1,0), quaternion.identity);
    }
 }

@@ -34,6 +34,12 @@ public class PlayerMove : MonoBehaviourPunCallbacks
         cc = GetComponent<CharacterController>();
         playerInput = new PlayerActionsExample();
         playerState = GetComponent<PlayerState>();
+
+        // 카메라가 로컬 플레이어만 따라가도록 설정
+        if (PV.IsMine)
+        {
+            PlayerCamera.instance.FollowPlayer(transform);
+        }
     }
 
     void Update()
