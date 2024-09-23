@@ -61,7 +61,7 @@ public class PlayerMove : MonoBehaviourPunCallbacks
                 playerState.ChangeState(PlayerState.State.IDLE);
                 //animator.SetBool("isMoving", false);
                 //PV.RPC("AnimationRPC", RpcTarget.All, "Idle");
-                PV.RPC("WalkRPC", RpcTarget.Others);
+                //PV.RPC("WalkRPC", RpcTarget.Others);
             }
             else
             {
@@ -70,7 +70,7 @@ public class PlayerMove : MonoBehaviourPunCallbacks
 
                 playerState.ChangeState(PlayerState.State.WALK);
                 //animator.SetBool("isMoving", true);
-                PV.RPC("AnimationRPC", RpcTarget.All, "Walk");
+                //PV.RPC("AnimationRPC", RpcTarget.All, "Walk");
             }
 
             bool jumpPress = playerInput.Player.Jump.triggered;
@@ -80,7 +80,7 @@ public class PlayerMove : MonoBehaviourPunCallbacks
 
                 playerState.ChangeState(PlayerState.State.JUMP);
                 //animator.SetTrigger("JumpTrigger");
-                PV.RPC("AnimationRPC", RpcTarget.All, "Jump");
+                //PV.RPC("AnimationRPC", RpcTarget.All, "Jump");
                 
             }
 

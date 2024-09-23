@@ -11,6 +11,16 @@ public class UIManager : MonoBehaviour
     public GameObject Canvas_center;
     public GameObject Canvas_challenge;
 
+
+    // rebud: 0, recode: 1, cueclyp : 2, overlab : 3
+    public GameObject[] Canvas_shopUI_Logo;
+    public GameObject[] Canvas_shopUI_brandInfo;
+    public GameObject[] Canvas_shopUI_Archive;
+    public GameObject[] Canvas_shopUI_Merchandise;
+    public GameObject[] Canvas_shopUI_details;
+
+
+
     public int maxCnt = 5;
 
     private void Awake() {

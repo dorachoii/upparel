@@ -34,18 +34,18 @@ public class InteractableItem : MonoBehaviour
 
         if(gameObject.CompareTag("Trash")){
             ui.Canvas_challenge.SetActive(true);
-             AudioClip popup = SoundManager.instance.audioClips[2];
+            AudioClip popup = SoundManager.instance.audioClips[2];
             SoundManager.instance.audioSource_SFX.PlayOneShot(popup);
             PlayerMove.Instance.think();
 
         }else if(gameObject.CompareTag("Building")){
-             AudioClip popup = SoundManager.instance.audioClips[2];
+            AudioClip popup = SoundManager.instance.audioClips[2];
             SoundManager.instance.audioSource_SFX.PlayOneShot(popup);
             ui.Canvas_shopUI.SetActive(true);
             PlayerMove.Instance.think();
             
         }else if(gameObject.CompareTag("UpparelCenter")){
-             AudioClip popup = SoundManager.instance.audioClips[2];
+            AudioClip popup = SoundManager.instance.audioClips[2];
             SoundManager.instance.audioSource_SFX.PlayOneShot(popup);
             ui.Canvas_center.SetActive(true);
             PlayerMove.Instance.think();
