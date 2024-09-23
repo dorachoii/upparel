@@ -4458,6 +4458,7 @@ MonoBehaviour:
   flower: {fileID: 1191520526}
   cleaningFX: {fileID: 1303981610}
   cam_pollution: {fileID: 0}
+  radius: 3
 --- !u!1 &237433028
 GameObject:
   m_ObjectHideFlags: 0
@@ -6522,6 +6523,11 @@ MonoBehaviour:
   Canvas_shopUI: {fileID: 1244870309}
   Canvas_center: {fileID: 1000177775}
   Canvas_challenge: {fileID: 471863847}
+  Canvas_shopUI_Logo: []
+  Canvas_shopUI_brandInfo: []
+  Canvas_shopUI_Archive: []
+  Canvas_shopUI_Merchandise: []
+  Canvas_shopUI_details: []
   maxCnt: 5
 --- !u!4 &385202600
 Transform:
@@ -20909,7 +20915,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1244870310
 MonoBehaviour:
   m_ObjectHideFlags: 0

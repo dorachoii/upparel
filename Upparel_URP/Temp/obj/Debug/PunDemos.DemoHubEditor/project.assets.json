@@ -1,0 +1,201 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETStandard,Version=v2.1": {
+      "PhotonRealtime/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PhotonRealtime.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PhotonRealtime.dll": {}
+        }
+      },
+      "PhotonUnityNetworking/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "PhotonRealtime": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PhotonUnityNetworking.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PhotonUnityNetworking.dll": {}
+        }
+      },
+      "UnityEditor.TestRunner/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "UnityEngine.TestRunner": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/UnityEditor.TestRunner.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UnityEditor.TestRunner.dll": {}
+        }
+      },
+      "UnityEditor.UI/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "UnityEditor.TestRunner": "1.0.0",
+          "UnityEngine.TestRunner": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/UnityEditor.UI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UnityEditor.UI.dll": {}
+        }
+      },
+      "UnityEngine.TestRunner/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/UnityEngine.TestRunner.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UnityEngine.TestRunner.dll": {}
+        }
+      },
+      "UnityEngine.UI/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/UnityEngine.UI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UnityEngine.UI.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PhotonRealtime/1.0.0": {
+      "type": "project",
+      "path": "PhotonRealtime.csproj",
+      "msbuildProject": "PhotonRealtime.csproj"
+    },
+    "PhotonUnityNetworking/1.0.0": {
+      "type": "project",
+      "path": "PhotonUnityNetworking.csproj",
+      "msbuildProject": "PhotonUnityNetworking.csproj"
+    },
+    "UnityEditor.TestRunner/1.0.0": {
+      "type": "project",
+      "path": "UnityEditor.TestRunner.csproj",
+      "msbuildProject": "UnityEditor.TestRunner.csproj"
+    },
+    "UnityEditor.UI/1.0.0": {
+      "type": "project",
+      "path": "UnityEditor.UI.csproj",
+      "msbuildProject": "UnityEditor.UI.csproj"
+    },
+    "UnityEngine.TestRunner/1.0.0": {
+      "type": "project",
+      "path": "UnityEngine.TestRunner.csproj",
+      "msbuildProject": "UnityEngine.TestRunner.csproj"
+    },
+    "UnityEngine.UI/1.0.0": {
+      "type": "project",
+      "path": "UnityEngine.UI.csproj",
+      "msbuildProject": "UnityEngine.UI.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETStandard,Version=v2.1": [
+      "PhotonRealtime >= 1.0.0",
+      "PhotonUnityNetworking >= 1.0.0",
+      "UnityEditor.TestRunner >= 1.0.0",
+      "UnityEditor.UI >= 1.0.0",
+      "UnityEngine.TestRunner >= 1.0.0",
+      "UnityEngine.UI >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/dora/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/dora/Documents/GitHub/upparel/Upparel_URP/PunDemos.DemoHubEditor.csproj",
+      "projectName": "PunDemos.DemoHubEditor",
+      "projectPath": "/Users/dora/Documents/GitHub/upparel/Upparel_URP/PunDemos.DemoHubEditor.csproj",
+      "packagesPath": "/Users/dora/.nuget/packages/",
+      "outputPath": "/Users/dora/Documents/GitHub/upparel/Upparel_URP/Temp/obj/Debug/PunDemos.DemoHubEditor/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/dora/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netstandard2.1"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "projectReferences": {
+            "/Users/dora/Documents/GitHub/upparel/Upparel_URP/PhotonRealtime.csproj": {
+              "projectPath": "/Users/dora/Documents/GitHub/upparel/Upparel_URP/PhotonRealtime.csproj"
+            },
+            "/Users/dora/Documents/GitHub/upparel/Upparel_URP/PhotonUnityNetworking.csproj": {
+              "projectPath": "/Users/dora/Documents/GitHub/upparel/Upparel_URP/PhotonUnityNetworking.csproj"
+            },
+            "/Users/dora/Documents/GitHub/upparel/Upparel_URP/UnityEditor.TestRunner.csproj": {
+              "projectPath": "/Users/dora/Documents/GitHub/upparel/Upparel_URP/UnityEditor.TestRunner.csproj"
+            },
+            "/Users/dora/Documents/GitHub/upparel/Upparel_URP/UnityEditor.UI.csproj": {
+              "projectPath": "/Users/dora/Documents/GitHub/upparel/Upparel_URP/UnityEditor.UI.csproj"
+            },
+            "/Users/dora/Documents/GitHub/upparel/Upparel_URP/UnityEngine.TestRunner.csproj": {
+              "projectPath": "/Users/dora/Documents/GitHub/upparel/Upparel_URP/UnityEngine.TestRunner.csproj"
+            },
+            "/Users/dora/Documents/GitHub/upparel/Upparel_URP/UnityEngine.UI.csproj": {
+              "projectPath": "/Users/dora/Documents/GitHub/upparel/Upparel_URP/UnityEngine.UI.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "netstandard2.1": {
+        "targetAlias": "netstandard2.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

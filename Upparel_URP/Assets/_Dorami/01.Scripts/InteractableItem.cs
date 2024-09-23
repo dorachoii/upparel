@@ -62,7 +62,7 @@ public class InteractableItem : MonoBehaviour
             PlayerMove.Instance.idle();
 
         }else if(gameObject.CompareTag("Building")){
-            ui.DeactivateShopUI(gameObject.name);
+            ui.DeactivateShopUI();
             //ui.Canvas_shopUI.SetActive(false);
             PlayerMove.Instance.idle();
             
