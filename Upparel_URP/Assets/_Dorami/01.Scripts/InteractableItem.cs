@@ -41,7 +41,7 @@ public class InteractableItem : MonoBehaviour
         }else if(gameObject.CompareTag("Building")){
             AudioClip popup = SoundManager.instance.audioClips[2];
             SoundManager.instance.audioSource_SFX.PlayOneShot(popup);
-            ui.Canvas_shopUI.SetActive(true);
+            ui.ActivateShopUI(gameObject.name);
             PlayerMove.Instance.think();
             
         }else if(gameObject.CompareTag("UpparelCenter")){
@@ -62,7 +62,8 @@ public class InteractableItem : MonoBehaviour
             PlayerMove.Instance.idle();
 
         }else if(gameObject.CompareTag("Building")){
-            ui.Canvas_shopUI.SetActive(false);
+            ui.DeactivateShopUI(gameObject.name);
+            //ui.Canvas_shopUI.SetActive(false);
             PlayerMove.Instance.idle();
             
         }else if(gameObject.CompareTag("UpparelCenter")){

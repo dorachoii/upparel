@@ -23,6 +23,39 @@ public class UIManager : MonoBehaviour
 
     public int maxCnt = 5;
 
+    public void ActivateShopUI(string shopname)
+    {
+        if(shopname == "re:bud_collider")
+        {
+            Canvas_shopUI.SetActive(true);
+            Canvas_shopUI_Logo[0].SetActive(true);
+            Canvas_shopUI_brandInfo[0].SetActive(true);
+        }
+        else if(shopname == "re:code_collder")
+        {
+            Canvas_shopUI.SetActive(true);
+            Canvas_shopUI_Logo[1].SetActive(true);
+            Canvas_shopUI_brandInfo[1].SetActive(true);
+        }
+        else if(shopname == "cueclyp_collider")
+        {
+            Canvas_shopUI.SetActive(true);
+            Canvas_shopUI_Logo[2].SetActive(true);
+            Canvas_shopUI_brandInfo[2].SetActive(true);
+        }
+        else if(shopname == "overlab_collider")
+        {
+            Canvas_shopUI.SetActive(true);
+            Canvas_shopUI_Logo[3].SetActive(true);
+            Canvas_shopUI_brandInfo[3].SetActive(true);
+        }
+    }
+
+    public void DeactivateShopUI(string shopname)
+    {
+        Canvas_shopUI.SetActive(false);
+    }
+
     private void Awake() {
         instance = this;
         Debug.Log("UIManager실행");
@@ -44,3 +77,5 @@ public class UIManager : MonoBehaviour
         }
     }
 }
+
+
