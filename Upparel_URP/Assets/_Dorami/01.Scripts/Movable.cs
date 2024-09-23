@@ -7,7 +7,6 @@ public class Movable : MonoBehaviour
 {
     NavMeshAgent agent;
     
-    // 순회할 웨이포인트 리스트
     List<Vector3> PatrolPos = new List<Vector3>
     {
         new Vector3(0, 0, 0),
@@ -18,7 +17,7 @@ public class Movable : MonoBehaviour
         new Vector3(-4, -0.5f, -16)
     };
 
-    Vector3 waypointTarget;  // 현재 목표 웨이포인트
+    Vector3 waypointTarget;  
     public float waypointReachedThreshold = 1.0f;  // 웨이포인트 도달 거리
 
     /// <summary>
