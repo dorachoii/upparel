@@ -9,6 +9,8 @@ TagManager:
   - Building
   - Trash
   - UpparelCenter
+  - Bag
+  - BagEffect
   layers:
   - Default
   - TransparentFX

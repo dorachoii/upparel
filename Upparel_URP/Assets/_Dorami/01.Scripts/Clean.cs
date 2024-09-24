@@ -20,6 +20,7 @@ public class Clean : MonoBehaviour
     float clearNum;
 
     PlayerState playerState;
+    GameObject player;
 
     void Start()
     {
@@ -28,6 +29,9 @@ public class Clean : MonoBehaviour
 
     public void clean()
     {
+        player = GameObject.FindWithTag("PlayerTag");
+        playerState = player.GetComponent<PlayerState>();
+
         cam_pollution.GetComponent<Camera>().enabled = true;
 
         int numberOfCharacters = allMovableObjects.Length;
@@ -45,6 +49,7 @@ public class Clean : MonoBehaviour
 
     IEnumerator ExecuteAfterDelay()
     {
+        PlayerCamera.instance.ZoomOut();
         yield return new WaitForSeconds(1f);
 
         AudioClip clean = SoundManager.instance.audioClips[1];
@@ -60,17 +65,25 @@ public class Clean : MonoBehaviour
         while (canvasGroup.alpha > 0)
         {
             print("while문 실행중!");
-            canvasGroup.alpha -= 0.1f * Time.deltaTime;
-            popup.alpha  -= 0.1f * Time.deltaTime;
+            canvasGroup.alpha -= 0.05f * Time.deltaTime;
+            popup.alpha  -= 0.05f * Time.deltaTime;
         }
 
+        yield return new WaitForSeconds(2f);
         cleaningFX.SetActive(false);
-
-        yield return new WaitForSeconds(1f);
         cam_pollution.GetComponent<Camera>().enabled = false;
 
-        PlayerCamera.instance.ZoomOut();
+        
+        //yield return new WaitForSeconds(1f);
+        PlayerCamera.instance.ZoomIn2();
+
+        //cam_pollution.GetComponent<PollutionCamera>().ZoomIn();
         playerState.ChangeState(PlayerState.State.DANCE);
+
+        yield return new WaitForSeconds(5.5f);
+        //playerState.ChangeState(PlayerState.State.IDLE);
+        PlayerCamera.instance.ZoomOut();
+        
 
     }
 }

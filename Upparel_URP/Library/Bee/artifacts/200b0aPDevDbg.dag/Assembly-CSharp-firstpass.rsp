@@ -320,6 +320,7 @@
 -r:"Library/Bee/artifacts/200b0aPDevDbg.dag/PhotonUnityNetworking.Demos.ref.dll"
 -r:"Library/Bee/artifacts/200b0aPDevDbg.dag/PhotonUnityNetworking.ref.dll"
 -r:"Library/Bee/artifacts/200b0aPDevDbg.dag/PhotonUnityNetworking.Utilities.ref.dll"
+-r:"Library/Bee/artifacts/200b0aPDevDbg.dag/Unity.AI.Navigation.ref.dll"
 -r:"Library/Bee/artifacts/200b0aPDevDbg.dag/Unity.Burst.ref.dll"
 -r:"Library/Bee/artifacts/200b0aPDevDbg.dag/Unity.InputSystem.ForUI.ref.dll"
 -r:"Library/Bee/artifacts/200b0aPDevDbg.dag/Unity.InputSystem.ref.dll"

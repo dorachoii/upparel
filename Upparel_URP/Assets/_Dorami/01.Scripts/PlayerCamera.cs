@@ -4,17 +4,19 @@ using UnityEngine;
 public class PlayerCamera : MonoBehaviour
 {
     public static PlayerCamera instance;
-    public Transform player; // 로컬 플레이어의 트랜스폼
+    public Transform player; // Local player's transform
 
-    private Vector3 initialOffset;  // 카메라와 플레이어 사이의 초기 오프셋
-    private Vector3 zoomedInOffset = new Vector3(0.1f, 1f, -3.5f); // 줌인시 사용할 오프셋
-    private Vector3 currentOffset; // 현재 오프셋
+    private Vector3 initialOffset;  // Initial offset between camera and player
+    private Vector3 zoomedInOffset = new Vector3(0.1f, 1f, -3.5f); // Offset for the first zoom-in
+    private Vector3 zoomedInOffset2 = new Vector3(0f, 1f, -2.2f); // Offset for ZoomIn2
+    private Vector3 currentOffset; // Current offset
 
-    private Quaternion initialRotation; // 초기 회전값
-    private Quaternion zoomedInRotation = Quaternion.Euler(0, 35, 0); // 줌인시 사용할 회전값
-    private Quaternion currentRotation; // 현재 회전값
+    private Quaternion initialRotation; // Initial rotation
+    private Quaternion zoomedInRotation = Quaternion.Euler(0, 35, 0); // Rotation for the first zoom-in
+    private Quaternion zoomedInRotation2 = Quaternion.Euler(10f, 0f, 0f); // Rotation for ZoomIn2
+    private Quaternion currentRotation; // Current rotation
 
-    private bool isZooming = false; // 줌 중인지 여부를 나타내는 플래그
+    private bool isZooming = false; // Flag to indicate zooming status
 
     void Awake()
     {
@@ -37,13 +39,13 @@ public class PlayerCamera : MonoBehaviour
     {
         if (player != null)
         {
-            // 플레이어를 따라 카메라 이동 및 회전
+            // Move and rotate camera to follow player
             transform.position = player.position + currentOffset;
             transform.rotation = currentRotation;
         }
     }
 
-    // 카메라가 특정 플레이어를 팔로우하도록 설정하는 함수
+    // Function to make the camera follow a specific player
     public void FollowPlayer(Transform playerTransform)
     {
         player = playerTransform;
@@ -58,6 +60,14 @@ public class PlayerCamera : MonoBehaviour
         if (!isZooming)
         {
             StartCoroutine(SmoothTransition(zoomedInOffset, zoomedInRotation, 1f));
+        }
+    }
+
+    public void ZoomIn2()
+    {
+        if (!isZooming)
+        {
+            StartCoroutine(SmoothTransition(zoomedInOffset2, zoomedInRotation2, 1f));
         }
     }
 

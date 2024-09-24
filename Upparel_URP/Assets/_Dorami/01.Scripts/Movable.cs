@@ -6,7 +6,8 @@ using UnityEngine.AI;
 public class Movable : MonoBehaviour
 {
     NavMeshAgent agent;
-    private Animator animator; // 애니메이터를 사용할 변수 추가
+    private Animator animator; // Animator variable
+    private GameObject player; // Reference to the player object
     
     List<Vector3> PatrolPos = new List<Vector3>
     {
@@ -19,18 +20,19 @@ public class Movable : MonoBehaviour
     };
 
     Vector3 waypointTarget;  
-    private Vector3 danceTarget;  // 목표 지점
-    public float waypointReachedThreshold = 1.0f;  // 웨이포인트 도달 거리
-    private bool isMovingToDanceLocation = false;  // Dance 위치로 이동 중인지 확인하는 플래그
-    private bool isPatrolling = true; // 패트롤 상태를 관리하는 플래그
+    private Vector3 danceTarget;  // Target position
+    public float waypointReachedThreshold = 1.0f;  // Waypoint reach distance
+    private bool isMovingToDanceLocation = false;  // Flag to check if moving to dance location
+    private bool isPatrolling = true; // Flag to manage patrolling state
 
-    private float originalSpeed; // 원래 NavMeshAgent의 속도를 저장
+    private float originalSpeed; // Store original NavMeshAgent speed
+    private float avoidanceRadius = 1f; // Avoidance distance from PlayerTag objects
 
     void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
-        animator = GetComponent<Animator>(); // Animator 컴포넌트를 가져옵니다.
-        originalSpeed = agent.speed; // 원래 속도를 저장합니다.
+        animator = GetComponent<Animator>(); // Get Animator component
+        originalSpeed = agent.speed; // Store original speed
     }
 
     void Start()
@@ -40,32 +42,35 @@ public class Movable : MonoBehaviour
 
     void Update()
     {
-        // 목표 지점에 도달했는지 확인
+        // Check if the agent reached the target
         if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
         {
             if (isMovingToDanceLocation)
             {
-                // Dance 위치에 도달했으면 애니메이션 실행
+                // Play dance animation
                 PlayDanceAnimation();
-                isMovingToDanceLocation = false; // 플래그를 해제
-                agent.speed = originalSpeed; // 속도를 원래대로 복원
-                StartCoroutine(ResumePatrolAfterDance()); // 일정 시간 후에 패트롤 재개
+                isMovingToDanceLocation = false; // Reset flag
+                agent.speed = originalSpeed; // Restore original speed
+                StartCoroutine(ResumePatrolAfterDance()); // Resume patrol after dancing
             }
             else if (isPatrolling)
             {
-                // 다음 웨이포인트로 이동
+                // Move to the next waypoint
                 GotoNextWaypoint();
             }
         }
-        
-        // Dance 위치로 이동 중일 때 1m 이내로 가까워졌는지 확인
+
+        // Check if moving to the dance location and within 1 meter
         if (isMovingToDanceLocation && Vector3.Distance(transform.position, danceTarget) <= 1f)
         {
             PlayDanceAnimation();
             isMovingToDanceLocation = false;
-            agent.speed = originalSpeed; // 속도를 원래대로 복원
-            StartCoroutine(ResumePatrolAfterDance()); // 일정 시간 후에 패트롤 재개
+            agent.speed = originalSpeed; // Restore original speed
+            StartCoroutine(ResumePatrolAfterDance()); // Resume patrol after dancing
         }
+
+        // Check for nearby PlayerTag objects and avoid them
+        AvoidPlayerObjects();
     }
 
     public void StartPatrol()
@@ -77,12 +82,12 @@ public class Movable : MonoBehaviour
     public void StopPatrol()
     {
         isPatrolling = false;
-        agent.ResetPath(); // 현재 경로를 멈춤
+        agent.ResetPath(); // Stop current path
     }
 
     public void GotoNextWaypoint()
     {
-        if (!isPatrolling) return; // 패트롤 중이 아니면 리턴
+        if (!isPatrolling) return; // Return if not patrolling
 
         int randomIndex = Random.Range(0, PatrolPos.Count);
         waypointTarget = PatrolPos[randomIndex];
@@ -90,19 +95,18 @@ public class Movable : MonoBehaviour
         agent.SetDestination(waypointTarget);
     }
 
-    // 특정 위치로 이동하는 함수
+    // Move to a specific target position
     public void MoveToTarget(Vector3 targetPosition)
-{
-    StopPatrol(); // 패트롤을 멈추고 지정된 위치로 이동
-    agent.speed = 10f; // 속도를 10으로 설정
-    agent.SetDestination(targetPosition);
-    
-    danceTarget = targetPosition;
-    isMovingToDanceLocation = true; // Dance 위치로 이동 중임을 표시
-}
+    {
+        StopPatrol(); // Stop patrolling and move to specified location
+        agent.speed = 10f; // Set speed to 10
+        agent.SetDestination(targetPosition);
+        
+        danceTarget = targetPosition;
+        isMovingToDanceLocation = true; // Set flag to indicate moving to dance location
+    }
 
-
-    // Dance 애니메이션을 실행하는 함수
+    // Play dance animation
     public void PlayDanceAnimation()
     {
         if (animator != null)
@@ -111,10 +115,32 @@ public class Movable : MonoBehaviour
         }
     }
 
-    // 일정 시간 후에 패트롤 재개
+    // Resume patrol after a delay
     private IEnumerator ResumePatrolAfterDance()
     {
-        yield return new WaitForSeconds(3f); // 3초 동안 Dance 애니메이션 실행
+        yield return new WaitForSeconds(3f); // Wait for 3 seconds
         StartPatrol();
+    }
+
+    // Check for nearby PlayerTag objects and avoid them
+    private void AvoidPlayerObjects()
+    {
+        GameObject[] players = GameObject.FindGameObjectsWithTag("PlayerTag");
+        foreach (GameObject playerObject in players)
+        {
+            float distance = Vector3.Distance(transform.position, playerObject.transform.position);
+            if (distance <= avoidanceRadius)
+            {
+                Vector3 directionToAvoid = (transform.position - playerObject.transform.position).normalized;
+                Vector3 newTargetPosition = transform.position + directionToAvoid * avoidanceRadius;
+
+                NavMeshPath path = new NavMeshPath();
+                if (agent.CalculatePath(newTargetPosition, path) && path.status == NavMeshPathStatus.PathComplete)
+                {
+                    agent.SetPath(path); // Set new path to avoid the player
+                    break;
+                }
+            }
+        }
     }
 }

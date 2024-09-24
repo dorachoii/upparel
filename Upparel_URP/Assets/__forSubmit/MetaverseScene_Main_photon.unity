@@ -558,6 +558,7 @@ GameObject:
   - component: {fileID: 15323205}
   - component: {fileID: 15323204}
   - component: {fileID: 15323203}
+  - component: {fileID: 15323207}
   m_Layer: 0
   m_Name: Camera_pollution
   m_TagString: Untagged
@@ -676,13 +677,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 15323202}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.099667475, y: 0.20818731, z: -0.021330465, w: 0.97276384}
+  m_LocalRotation: {x: 0.09375125, y: 0.2069545, z: -0.019927442, w: 0.97364444}
   m_LocalPosition: {x: -15, y: 4, z: -12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 11.7, y: 24.16, z: 0}
+  m_LocalEulerAnglesHint: {x: 11, y: 24, z: 0}
+--- !u!114 &15323207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15323202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d869606376da34da387485e6f33d8fcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoomSpeed: 2
+  closeDistance: 0.5
 --- !u!1 &15890221
 GameObject:
   m_ObjectHideFlags: 0
@@ -3990,7 +4005,7 @@ PrefabInstance:
     - target: {fileID: 109468732517717036, guid: 19e1455c0070b482c92f62bee9ad3664,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -9.13
       objectReference: {fileID: 0}
     - target: {fileID: 109468732517717036, guid: 19e1455c0070b482c92f62bee9ad3664,
         type: 3}
@@ -4000,7 +4015,7 @@ PrefabInstance:
     - target: {fileID: 109468732517717036, guid: 19e1455c0070b482c92f62bee9ad3664,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -4.9
       objectReference: {fileID: 0}
     - target: {fileID: 109468732517717036, guid: 19e1455c0070b482c92f62bee9ad3664,
         type: 3}
@@ -9375,6 +9390,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1753080484}
+        m_TargetAssemblyTypeName: Money, Assembly-CSharp
+        m_MethodName: AddCart
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -20946,7 +20973,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &855674838
 RectTransform:
   m_ObjectHideFlags: 0
@@ -43258,7 +43285,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 770b5b40e1df6423ca6f147431e9919e, type: 2}
   m_sharedMaterial: {fileID: 6214204200261713658, guid: 770b5b40e1df6423ca6f147431e9919e,
@@ -43286,8 +43313,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -47223,7 +47250,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1840709989
 MonoBehaviour:
   m_ObjectHideFlags: 0

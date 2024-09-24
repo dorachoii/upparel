@@ -10,6 +10,8 @@ public class PlayerState : MonoBehaviourPunCallbacks
     public Animator animator;
     public PhotonView PV;
 
+    public GameObject bag, bagFX;
+
     public enum State
     {
         IDLE,
@@ -27,6 +29,7 @@ public class PlayerState : MonoBehaviourPunCallbacks
             case State.IDLE:
                 animator.SetBool("isMoving", false);
                 PV.RPC("idleRpc", RpcTarget.All);
+                //if(bagFX.activeSelf) bagFX.SetActive(false);
                 break;
             case State.WALK:
                 animator.SetBool("isMoving", true);
@@ -39,6 +42,7 @@ public class PlayerState : MonoBehaviourPunCallbacks
             case State.DANCE:
                 animator.SetTrigger("DanceTrigger");
                 PV.RPC("danceRpc", RpcTarget.All);
+                StartCoroutine(turnOnBag());
                 break;
         }
     }
@@ -65,5 +69,15 @@ public class PlayerState : MonoBehaviourPunCallbacks
     void danceRpc()
     {
        animator.SetTrigger("DanceTrigger");
+    }
+
+    [PunRPC]
+    IEnumerator turnOnBag()
+    {
+        bag.SetActive(true);
+        bagFX.SetActive(true);
+
+        yield return new WaitForSeconds(3.5f);
+        bagFX.SetActive(false);
     }
 }

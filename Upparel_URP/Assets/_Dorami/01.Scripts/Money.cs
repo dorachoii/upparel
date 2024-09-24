@@ -23,8 +23,18 @@ public class Money : MonoBehaviour
         AudioClip coin = SoundManager.instance.audioClips[0];
         SoundManager.instance.audioSource_SFX.PlayOneShot(coin);
 
-        cart1.GetComponent<Image>().enabled = false;
-        cart2.GetComponent<TextMeshProUGUI>().text = "";
+        //cart1.GetComponent<Image>().enabled = false;
+        cart2.GetComponent<TextMeshProUGUI>().text = "0";
+    }
+
+    public void AddCart()
+    {
+        
+        AudioClip coin = SoundManager.instance.audioClips[0];
+        SoundManager.instance.audioSource_SFX.PlayOneShot(coin);
+
+        //cart1.GetComponent<Image>().enabled = false;
+        cart2.GetComponent<TextMeshProUGUI>().text = "1";
     }
 
 }
