@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Clean : MonoBehaviour
 {
@@ -9,12 +11,18 @@ public class Clean : MonoBehaviour
     public GameObject cleaningFX;
     public Camera cam_pollution;
 
-    private Movable[] allMovableObjects; // 모든 Movable 오브젝트를 저장할 배열
-    public float radius = 3f; // 캐릭터들이 원을 그릴 반지름
+    private Movable[] allMovableObjects; 
+    public float radius = 3f; 
+
+    public CanvasGroup canvasGroup;
+    public CanvasGroup popup;
+
+    float clearNum;
+
+    PlayerState playerState;
 
     void Start()
     {
-        // 씬 내에 있는 모든 Movable 오브젝트를 찾습니다.
         allMovableObjects = FindObjectsOfType<Movable>();
     }
 
@@ -22,16 +30,13 @@ public class Clean : MonoBehaviour
     {
         cam_pollution.GetComponent<Camera>().enabled = true;
 
-        // 캐릭터들을 원형으로 배치
         int numberOfCharacters = allMovableObjects.Length;
         for (int i = 0; i < numberOfCharacters; i++)
         {
-            // 각도를 계산하여 각 캐릭터의 목표 위치를 설정
-            float angle = i * Mathf.PI * 2 / numberOfCharacters; // 360도 / 캐릭터 수
+            float angle = i * Mathf.PI * 2 / numberOfCharacters; 
             Vector3 offset = new Vector3(Mathf.Cos(angle), 0, Mathf.Sin(angle)) * radius;
-            Vector3 targetPosition = cleaningFX.transform.position + offset; // pollution을 중심으로 반지름만큼 떨어진 위치
+            Vector3 targetPosition = cleaningFX.transform.position + offset; 
 
-            // 각 캐릭터를 해당 위치로 이동
             allMovableObjects[i].MoveToTarget(targetPosition);
         }
 
@@ -48,5 +53,24 @@ public class Clean : MonoBehaviour
         cleaningFX.SetActive(true);
         pollution.SetActive(false);
         flower.SetActive(true);
+
+        yield return new WaitForSeconds(1f);
+        
+
+        while (canvasGroup.alpha > 0)
+        {
+            print("while문 실행중!");
+            canvasGroup.alpha -= 0.1f * Time.deltaTime;
+            popup.alpha  -= 0.1f * Time.deltaTime;
+        }
+
+        cleaningFX.SetActive(false);
+
+        yield return new WaitForSeconds(1f);
+        cam_pollution.GetComponent<Camera>().enabled = false;
+
+        PlayerCamera.instance.ZoomOut();
+        playerState.ChangeState(PlayerState.State.DANCE);
+
     }
 }

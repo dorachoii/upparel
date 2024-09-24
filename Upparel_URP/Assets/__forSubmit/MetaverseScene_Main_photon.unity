@@ -616,7 +616,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 15323202}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &15323205
 Camera:
   m_ObjectHideFlags: 0
@@ -4042,6 +4042,11 @@ PrefabInstance:
       propertyPath: sceneViewId
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2823885699273397871, guid: 19e1455c0070b482c92f62bee9ad3664,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7263035940834358523, guid: 19e1455c0070b482c92f62bee9ad3664,
         type: 3}
       propertyPath: m_Name
@@ -6524,6 +6529,8 @@ MonoBehaviour:
   cleaningFX: {fileID: 1303981610}
   cam_pollution: {fileID: 15323205}
   radius: 3
+  canvasGroup: {fileID: 682991345}
+  popup: {fileID: 1497785980}
 --- !u!1001 &236977498
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16566,6 +16573,7 @@ GameObject:
   - component: {fileID: 682991342}
   - component: {fileID: 682991344}
   - component: {fileID: 682991343}
+  - component: {fileID: 682991345}
   m_Layer: 5
   m_Name: blackScreen
   m_TagString: Untagged
@@ -16630,6 +16638,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 682991341}
   m_CullTransparentMesh: 1
+--- !u!225 &682991345
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682991341}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &691377624
 GameObject:
   m_ObjectHideFlags: 0
@@ -37987,6 +38007,7 @@ GameObject:
   - component: {fileID: 1497785978}
   - component: {fileID: 1497785977}
   - component: {fileID: 1497785979}
+  - component: {fileID: 1497785980}
   m_Layer: 5
   m_Name: popup_badge
   m_TagString: Untagged
@@ -38161,6 +38182,18 @@ MonoBehaviour:
   optionalScrambleMode: 0
   optionalShakeRandomnessMode: 0
   optionalString: 
+--- !u!225 &1497785980
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497785975}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1499620389
 GameObject:
   m_ObjectHideFlags: 0
@@ -52747,6 +52780,33 @@ MonoBehaviour:
       - m_Target: {fileID: 230913428}
         m_TargetAssemblyTypeName: Clean, Assembly-CSharp
         m_MethodName: clean
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnEnded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2044919002}
+        m_TargetAssemblyTypeName: fadeInOut, Assembly-CSharp
+        m_MethodName: Clear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1497785979}
+        m_TargetAssemblyTypeName: DG.Tweening.DOTweenAnimation, Assembly-CSharp-firstpass
+        m_MethodName: DORewind
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

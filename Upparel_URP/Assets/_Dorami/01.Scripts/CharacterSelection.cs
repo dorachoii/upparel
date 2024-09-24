@@ -1,11 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class CharacterSelection : MonoBehaviour
 {
     public static CharacterSelection instance;
-    
+
     public GameObject selectedCharacter;
     public GameObject[] charactersPrefab = new GameObject[6];
 
@@ -28,12 +27,9 @@ public class CharacterSelection : MonoBehaviour
         }
     }
 
-    // Main Scene에서 캐릭터를 Instantiate하는 함수
-    public void InstantiateSelectedCharacterInMainScene()
+    // 선택된 캐릭터 인덱스를 반환하는 메서드 추가
+    public int GetSelectedCharacterIndex()
     {
-        if (selectedCharacter != null)
-        {
-            Instantiate(selectedCharacter, new Vector3(0, 0, 0), Quaternion.Euler(0, 180, 0));
-        }
+        return selectedCharacterIndex;
     }
 }

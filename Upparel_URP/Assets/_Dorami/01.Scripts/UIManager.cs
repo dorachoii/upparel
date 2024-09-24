@@ -276,21 +276,21 @@ public class UIManager : MonoBehaviour
         instance = this;
         Debug.Log("UIManager실행");
 
-        if (CharacterSelection.instance != null)
-        {
-            CharacterSelection.instance.InstantiateSelectedCharacterInMainScene();
-        }
-        else
-        {
-            Debug.LogWarning("CharacterSelection 싱글톤 인스턴스에 접근할 수 없습니다.");
-        }
+        // if (CharacterSelection.instance != null)
+        // {
+        //     CharacterSelection.instance.InstantiateSelectedCharacterInMainScene();
+        // }
+        // else
+        // {
+        //     Debug.LogWarning("CharacterSelection 싱글톤 인스턴스에 접근할 수 없습니다.");
+        // }
     }
 
     private void Update() {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            CharacterSelection.instance.InstantiateSelectedCharacterInMainScene();
-        }
+        // if(Input.GetKeyDown(KeyCode.Space))
+        // {
+        //     CharacterSelection.instance.InstantiateSelectedCharacterInMainScene();
+        // }
     }
 }
 

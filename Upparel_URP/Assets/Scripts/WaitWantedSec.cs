@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public class WaitWantedSec : MonoBehaviour
 {
     public UnityEvent OnCalled;
+    public UnityEvent OnEnded;
     public float Sec;
 
     void Start()
