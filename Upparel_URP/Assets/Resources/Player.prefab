@@ -267,6 +267,7 @@ GameObject:
   - component: {fileID: 1087831767755346034}
   - component: {fileID: 865862137873483064}
   - component: {fileID: 2589016211437303477}
+  - component: {fileID: 430507408133824633}
   m_Layer: 0
   m_Name: Player
   m_TagString: PlayerTag
@@ -466,6 +467,28 @@ MonoBehaviour:
   PV: {fileID: 1087831767755346034}
   bag: {fileID: 4008386599392616469}
   bagFX: {fileID: 2735040069757992255}
+--- !u!195 &430507408133824633
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7263035940834358523}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 0
 --- !u!1001 &1953229989242425625
 PrefabInstance:
   m_ObjectHideFlags: 0

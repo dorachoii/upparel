@@ -61,7 +61,7 @@ public class Movable : MonoBehaviour
         }
 
         // Check if moving to the dance location and within 1 meter
-        if (isMovingToDanceLocation && Vector3.Distance(transform.position, danceTarget) <= 1f)
+        if (isMovingToDanceLocation && Vector3.Distance(transform.position, danceTarget) <= 3f)
         {
             PlayDanceAnimation();
             isMovingToDanceLocation = false;
