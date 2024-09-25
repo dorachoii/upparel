@@ -36,6 +36,12 @@ public class HttpRequestBuilder
         myReq.path = uri;
         return this;
     }
+    
+    public HttpRequestBuilder Host(string host)
+    {
+        myReq.host = host;
+        return this;
+    }
     public HttpRequestBuilder Type(RequestType type)
     {
         myReq.type = type;

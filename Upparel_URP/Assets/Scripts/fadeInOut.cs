@@ -7,7 +7,6 @@ public class fadeInOut : MonoBehaviour
     public CanvasGroup canvasGroup;
     public bool fadeIn = false;
     public bool fadeOut = false;
-    bool clear = false;
 
     public float timeToFade;
 
@@ -21,11 +20,9 @@ public class fadeInOut : MonoBehaviour
     void Update()
     {
         if (fadeIn == true)
-        {   
-            print("캔버스그룹 알파" + canvasGroup.alpha);
+        {
             if(canvasGroup.alpha < 1)
             {
-                
                 canvasGroup.alpha += timeToFade * Time.deltaTime;
                 if(canvasGroup.alpha >= 1)
                 {
@@ -46,28 +43,15 @@ public class fadeInOut : MonoBehaviour
             }
         }
 
-        if(clear)
-        {
-            while(canvasGroup.alpha > 0){
-                 canvasGroup.alpha -= timeToFade * Time.deltaTime;
-            }
-        }
-
     }
 
     public void FadeIn()
     {
-        print("fadein실행");
         fadeIn = true;
     }
 
     public void FadeOut()
     {
         fadeOut = true;
-    }
-
-    public void Clear()
-    {
-        clear = true;
     }
 }
