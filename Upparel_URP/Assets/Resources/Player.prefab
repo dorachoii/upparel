@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Dorami
+  m_text: Junsi
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be3b36f7694a68c4bb7df60158a2a444, type: 2}
   m_sharedMaterial: {fileID: -3095154291193906608, guid: be3b36f7694a68c4bb7df60158a2a444,
