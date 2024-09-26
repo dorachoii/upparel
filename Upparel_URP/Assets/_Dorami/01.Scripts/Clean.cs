@@ -62,14 +62,14 @@ public class Clean : MonoBehaviour
         yield return new WaitForSeconds(1f);
         
 
-        while (canvasGroup.alpha > 0)
-        {
-            print("while문 실행중!");
-            canvasGroup.alpha -= 0.05f * Time.deltaTime;
-            popup.alpha  -= 0.05f * Time.deltaTime;
-        }
+        // while (canvasGroup.alpha > 0)
+        // {
+        //     //print("while문 실행중!");
+        //     canvasGroup.alpha -= 0.001f * Time.deltaTime;
+        //     //popup.alpha  -= 0.05f * Time.deltaTime;
+        // }
 
-        yield return new WaitForSeconds(2f);
+        //yield return new WaitForSeconds(2f);
         cleaningFX.SetActive(false);
         cam_pollution.GetComponent<Camera>().enabled = false;
 
@@ -79,6 +79,7 @@ public class Clean : MonoBehaviour
 
         //cam_pollution.GetComponent<PollutionCamera>().ZoomIn();
         playerState.ChangeState(PlayerState.State.DANCE);
+        player.transform.LookAt(Camera.main.transform.forward);
 
         yield return new WaitForSeconds(5.5f);
         //playerState.ChangeState(PlayerState.State.IDLE);
