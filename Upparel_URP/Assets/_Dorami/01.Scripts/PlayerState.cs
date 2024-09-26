@@ -77,7 +77,7 @@ public class PlayerState : MonoBehaviourPunCallbacks
         bag.SetActive(true);
         bagFX.SetActive(true);
 
-        yield return new WaitForSeconds(3.5f);
+        yield return new WaitForSeconds(5f);
         bagFX.SetActive(false);
     }
 }
