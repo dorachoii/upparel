@@ -21,6 +21,9 @@ public class SceneResolutionManager : MonoBehaviour
             case 2: // 씬 인덱스 2번 (가로 해상도)
                 Screen.SetResolution(2556, 1179, false); // 가로 해상도로 설정
                 break;
+            case 3:
+                Screen.SetResolution(1179, 2556, false); // 세로 해상도로 설정
+                break;
         }
     }
 

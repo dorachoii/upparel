@@ -4459,6 +4459,8 @@ MonoBehaviour:
   cleaningFX: {fileID: 1303981610}
   cam_pollution: {fileID: 0}
   radius: 3
+  canvasGroup: {fileID: 0}
+  popup: {fileID: 0}
 --- !u!1 &237433028
 GameObject:
   m_ObjectHideFlags: 0
@@ -6523,6 +6525,7 @@ MonoBehaviour:
   Canvas_shopUI: {fileID: 1244870309}
   Canvas_center: {fileID: 1000177775}
   Canvas_challenge: {fileID: 471863847}
+  popup: {fileID: 0}
   Canvas_shopUI_Logo: []
   Canvas_shopUI_brandInfo: []
   Canvas_shopUI_Archive: []
@@ -20915,7 +20918,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1244870310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25849,6 +25852,8 @@ MonoBehaviour:
   currState: 0
   animator: {fileID: 1473917318}
   PV: {fileID: 1458232986}
+  bag: {fileID: 0}
+  bagFX: {fileID: 0}
 --- !u!1001 &1463458774
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/__forSubmit/MetaverseScene_Main_photon.unity
     guid: b11b62b53733041c89aaf6eadd59c877
+  - enabled: 1
+    path: Assets/_forCollectCloth/CollectCloth.unity
+    guid: a403e404f758341ca89fcc356d3b704d
   m_configObjects: {}

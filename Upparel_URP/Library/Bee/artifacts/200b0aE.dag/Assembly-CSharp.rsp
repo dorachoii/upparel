@@ -453,6 +453,7 @@
 "Assets/Photon/PhotonRealtime/Demos/DemoLoadBalancing/ConnectAndJoinRandomLb.cs"
 "Assets/PlayerInputActions.cs"
 "Assets/PollutionCamera.cs"
+"Assets/sceneManager_World.cs"
 "Assets/Scripts/Counter.cs"
 "Assets/Scripts/fadeInOut.cs"
 "Assets/Scripts/GameInput.cs"
