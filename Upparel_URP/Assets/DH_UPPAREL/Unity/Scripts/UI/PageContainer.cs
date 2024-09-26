@@ -19,13 +19,13 @@ public class PageContainer : MonoBehaviour
     private void Awake()
     {
         Init();
-        PageManager.Get.containers.Add(address, this); //ï¿½Ú±ï¿½ ï¿½Ú½ï¿½ï¿½ï¿½ PageManagerï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ 
+        PageManager.Get.containers.Add(address, this); //ÀÚ±â ÀÚ½ÅÀ» PageManager¿¡ µî·ÏÇÏ±â 
     }
     private void Start()
     {
         
     }
-    //ï¿½ï¿½ï¿½ï¿½ï¿½Ì³Ê¸ï¿½ ï¿½ï¿½ï¿½ï¿½
+    //ÄÁÅ×ÀÌ³Ê¸¦ »ý¼º
     [SerializeField]
     Page[] pages;
     public void Init()
@@ -47,7 +47,7 @@ public class PageContainer : MonoBehaviour
         }
         for(int i = 0; i < targetParent.childCount; i++)
         {
-            //Debug.Log(targetParent.childCount);
+            Debug.Log(targetParent.childCount);
             Transform child = targetParent.GetChild(i);
             Page page = child.gameObject.GetComponent<Page>();
             if (page != null)

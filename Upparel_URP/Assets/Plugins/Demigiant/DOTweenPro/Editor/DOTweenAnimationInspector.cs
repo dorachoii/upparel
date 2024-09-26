@@ -338,7 +338,7 @@ namespace DG.DOTweenEditor
 //                _src.animationType = (DOTweenAnimation.AnimationType)EditorGUILayout.EnumPopup(_src.animationType, EditorGUIUtils.popupButton);
                 GUI.enabled = GUI.enabled && _src.isActive;
                 _src.animationType = AnimationToDOTweenAnimationType(_AnimationType[EditorGUILayout.Popup(DOTweenAnimationTypeToPopupId(_src.animationType), _AnimationType)]);
-                _src.autoGenerate = DeGUILayout.ToggleButton(_src.autoGenerate, new GUIContent("AutoGenerate", "If selected, the tween will be generated at startup (during Start for RectTransform position tween, Awake for all the others)"));
+                _src.autoGenerate = DeGUILayout.ToggleButton(_src.autoGenerate, new GUIContent("AutoGenerate", "If selected, the tween will be generated at startup (dPathng Start for RectTransform position tween, Awake for all the others)"));
                 if (_src.autoGenerate) {
                     _src.autoPlay = DeGUILayout.ToggleButton(_src.autoPlay, new GUIContent("AutoPlay", "If selected, the tween will play automatically"));
                 }
@@ -700,7 +700,7 @@ namespace DG.DOTweenEditor
             GUILayout.EndHorizontal();
 #if true // UI_MARKER
             if (_src.useTargetAsV3 && _src.endValueTransform != null && _src.target is RectTransform) {
-                EditorGUILayout.HelpBox("NOTE: when using a UI target, the tween will be created during Start instead of Awake", MessageType.Info);
+                EditorGUILayout.HelpBox("NOTE: when using a UI target, the tween will be created dPathng Start instead of Awake", MessageType.Info);
             }
 #endif
         }

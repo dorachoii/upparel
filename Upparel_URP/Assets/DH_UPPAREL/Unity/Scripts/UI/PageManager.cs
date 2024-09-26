@@ -41,13 +41,13 @@ public class PageManager : MonoBehaviour
 
 
     public void ChangePage(string container,string address)
-    {   //О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫ О©╫О©╫О©╫ь©О©╫ О©╫ж╟О©╫
-        //О©╫О©╫О©╫О©╫ ц╪е╘ : О©╫О©╫О©╫ц©О©╫ О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫
+    {   //гЖюГ фДюлаЖ╦╕ юлюЭ ╫╨еь©║ Ёж╟М
+        //а╤╟г ц╪е╘ : ╫╨ец©║ гЖюГ фДюлаЖ╟║ южю╦╦И ╦╝ео
 /*        if (prev_pageStack.Contains(currentPage))
         {
             return;
         }*/
-        //О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫ц╩О©╫я╢О©╫.
+        //╢ыю╫ фДюлаЖ╦╕ ©Дц╩гя╢ы.
         PageContainer cont = null;
         containers.TryGetValue(container, out cont);
         if (cont)
@@ -72,9 +72,9 @@ public class PageManager : MonoBehaviour
     {
         if(next_pageStack.Count > 0)
         {
-            //О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫о╟О©╫
+            //юлюЭ фДюлаЖ©║ Ё╙╦╕ юЗюЕго╟М
             prev_pageStack.Push(CurrentPage);
-            //О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫ф╟О©╫О©╫О©╫.
+            //гЖюГ фДюлаЖ╢б ╢ыю╫ фДюлаЖ╥н ╣╧╬ф╟ё╢ы.
             CurrentPage = next_pageStack.Pop();
         }
         
@@ -83,9 +83,9 @@ public class PageManager : MonoBehaviour
     {
         if(prev_pageStack.Count > 0)
         {
-            //О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫о╟О©╫
+            //╢ыю╫ фДюлаЖ©║╢б Ё╙╦╕ юЗюЕго╟М
             next_pageStack.Push(CurrentPage);
-            //О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫ф╟О©╫О©╫О©╫.
+            //гЖюГ фДюлаЖ╢б юлюЭ фДюлаЖ╥н ╣╧╬ф╟ё╢ы.
             CurrentPage = prev_pageStack.Pop();
         }
        

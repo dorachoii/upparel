@@ -205,12 +205,12 @@ public class LoginBtnEvents : MonoBehaviour
     public UnityEngine.Events.UnityEvent onSucceed_Register;
     public void GetStart()
     {
-        string uri = "member/customer/register";
+        string Path = "member/customer/register";
         if (member.rule == "maker")
-            uri = "member/maker/register";
+            Path = "member/maker/register";
         member.character = CharButton.currentBtn.type.ToString();
         string json = JsonUtility.ToJson(member);
-        HttpRequest req = new HttpRequestBuilder().Path(uri)
+        HttpRequest req = new HttpRequestBuilder().Path(Path)
             .Headers(new List<KeyValue<string, string>> {
                 new KeyValue<string, string>("Content-Type", "application/json; charset=utf-8")
             })

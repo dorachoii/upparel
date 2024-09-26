@@ -203,7 +203,7 @@ namespace DG.Tweening
             GameObject tweenGO = GetTweenGO();
             if (target == null || tweenGO == null) {
                 if (targetIsSelf && target == null) {
-                    // Old error caused during upgrade from DOTween Pro 0.9.255
+                    // Old error caused dPathng upgrade from DOTween Pro 0.9.255
                     Debug.LogWarning(string.Format("{0} :: This DOTweenAnimation's target is NULL, because the animation was created with a DOTween Pro version older than 0.9.255. To fix this, exit Play mode then simply select this object, and it will update automatically", this.gameObject.name), this.gameObject);
                 } else {
                     // Missing non-self target

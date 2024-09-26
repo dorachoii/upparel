@@ -22,7 +22,7 @@ public class DotUI : MonoBehaviour
     {
         int count = copyContent.transform.childCount;
         dots = new GameObject[count];
-        //Debug.Log(count);
+        Debug.Log(count);
         for(int i = 0; i < count; i++)
         {
             GameObject go = Instantiate(dot);
