@@ -38,9 +38,11 @@
 ![u2](https://github.com/user-attachments/assets/6011b005-69a5-4a42-abb7-61300cba98fc)
 
 ### 3️⃣ AR 스와치 기능
-![](https://velog.velcdn.com/images/hellodora7/post/213de85c-548a-447f-aec0-20f5d1820ef8/image.gif)
+![u3](https://github.com/user-attachments/assets/924fb0e2-88f4-411e-9f12-a1163fb07504)
 
 
 ### 4️⃣ 3D 캐릭터 상호작용
-![](https://velog.velcdn.com/images/hellodora7/post/0653557e-3d33-40e8-bcf9-4fc4aa7d5486/image.gif)
+![u4](https://github.com/user-attachments/assets/f8e6308e-16d9-4d8a-86ad-59b4fbb4f2a0)
+![u5](https://github.com/user-attachments/assets/f6ce19ae-29c1-4b26-8517-17e717edbd4d)
+
 
