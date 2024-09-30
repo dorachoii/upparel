@@ -38,7 +38,7 @@
 ![u2](https://github.com/user-attachments/assets/6011b005-69a5-4a42-abb7-61300cba98fc)
 
 ### 3️⃣ AR 스와치 기능
-![u3](https://github.com/user-attachments/assets/3c5e9b4c-ec23-4a7e-b373-786302b5cc96)
+![u7](https://github.com/user-attachments/assets/4b219bcd-6e8a-4c6a-828c-a026520334d1)
 
 
 ### 4️⃣ 3D 캐릭터 상호작용
