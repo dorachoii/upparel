@@ -35,8 +35,7 @@
 ![](https://velog.velcdn.com/images/hellodora7/post/b11eace4-df9f-4953-97bb-cd6c504eba6d/image.gif)
 
 ### 2️⃣ 의류 라벨 자동 분석(OCR)
-![](https://velog.velcdn.com/images/hellodora7/post/964a2af0-e35a-4c92-be59-4f2ef3af39d8/image.gif)
-
+![u2](https://github.com/user-attachments/assets/6011b005-69a5-4a42-abb7-61300cba98fc)
 
 ### 3️⃣ AR 스와치 기능
 ![](https://velog.velcdn.com/images/hellodora7/post/213de85c-548a-447f-aec0-20f5d1820ef8/image.gif)
