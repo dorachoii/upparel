@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - PlayerTag
+  - Selected
+  - Building
+  - Trash
+  - UpparelCenter
+  - Bag
+  - BagEffect
   layers:
   - Default
   - TransparentFX

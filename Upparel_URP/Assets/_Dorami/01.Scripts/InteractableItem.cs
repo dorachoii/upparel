@@ -33,11 +33,22 @@ public class InteractableItem : MonoBehaviour
         print("태그는" + gameObject.tag);
 
         if(gameObject.CompareTag("Trash")){
-            ui.Btn_Funding.SetActive(true);
+            ui.Canvas_challenge.SetActive(true);
+            AudioClip popup = SoundManager.instance.audioClips[2];
+            SoundManager.instance.audioSource_SFX.PlayOneShot(popup);
+            PlayerMove.Instance.think();
+
         }else if(gameObject.CompareTag("Building")){
+            AudioClip popup = SoundManager.instance.audioClips[2];
+            SoundManager.instance.audioSource_SFX.PlayOneShot(popup);
+            ui.ActivateShopUI(gameObject.name);
+            PlayerMove.Instance.think();
             
-            ui.Btn_Donation.SetActive(true);
-            ui.Btn_Tracking.SetActive(true);
+        }else if(gameObject.CompareTag("UpparelCenter")){
+            AudioClip popup = SoundManager.instance.audioClips[2];
+            SoundManager.instance.audioSource_SFX.PlayOneShot(popup);
+            ui.Canvas_center.SetActive(true);
+            PlayerMove.Instance.think();
         }
     }
 
@@ -47,11 +58,17 @@ public class InteractableItem : MonoBehaviour
         selectedOne.SetActive(false);
 
         if(gameObject.CompareTag("Trash")){
-            ui.Btn_Funding.SetActive(false);
+            ui.Canvas_challenge.SetActive(false);
+            PlayerMove.Instance.idle();
 
         }else if(gameObject.CompareTag("Building")){
-            ui.Btn_Donation.SetActive(false);
-            ui.Btn_Tracking.SetActive(false);
+            ui.DeactivateShopUI();
+            //ui.Canvas_shopUI.SetActive(false);
+            PlayerMove.Instance.idle();
+            
+        }else if(gameObject.CompareTag("UpparelCenter")){
+            ui.Canvas_center.SetActive(false);
+            PlayerMove.Instance.idle();
         }
     }
 
