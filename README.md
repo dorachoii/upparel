@@ -1,0 +1,7 @@
+![segaPPT 004](https://github.com/user-attachments/assets/677b5205-f9ee-4205-928c-a0f2aadd30f1)
+![segaPPT 009](https://github.com/user-attachments/assets/6f7404f4-5837-43c3-9993-5db5b8f884cd)
+![segaPPT 010](https://github.com/user-attachments/assets/93b50f20-822c-47f2-8ac0-9ab8eaaf417c)
+![segaPPT 013](https://github.com/user-attachments/assets/fde094bd-2eb0-4cb9-b863-23829028cd81)
+![segaPPT 014](https://github.com/user-attachments/assets/d257b26f-1410-49df-ab79-31f95b345280)
+![segaPPT 017](https://github.com/user-attachments/assets/1aaeb4ff-8001-4aa6-afcf-582908faa83f)
+![segaPPT 018](https://github.com/user-attachments/assets/a5fd76c2-ae49-4afa-bb6f-ed14777358a9)
